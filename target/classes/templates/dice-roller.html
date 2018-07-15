@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DarthLlama's Dice Roller</title>
+</head>
+<body>
+<p th:text="'You rolled a ' + ${result} + '!'" />
+<p><a th:href="'/dice-roller?sides=' + ${sides}">Roll Again!</a></p>
+</body>
+</html>

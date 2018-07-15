@@ -1,0 +1,18 @@
+{
+	"cleric" : {
+		"hit_die" : "8",
+		"proficienciesArmours" : [ "light", "medium", "shields" ],
+		"proficienciesWeapons" : [ "simple" ],
+		
+		"savingThrows" : [ "wis", "cha" ]
+		"skillChoice" : [ "history", "insight", "medicine", "persuasion", "religion" ]
+		
+		"1" : {
+			"proficienciesMod" : "2",
+			"features" : [ "spellcasting", "divine_domain"],
+			"amountOfCantripsKnown" : "3",
+			"1stLevelSpellSlots" : 2
+		}
+	
+	}
+}

@@ -1,0 +1,173 @@
+{
+	"human" : {
+		"size" : "medium",
+		"speed" : "30",
+		"languages" : [
+			"common",
+			"+1"
+		],
+		"human" : {
+			"stat_increases" : [
+				"1",
+				"1",
+				"1",
+				"1",
+				"1",
+				"1"
+			]
+		},
+		"humanVariant" : {
+			"stat_increases" : [
+				"0",
+				"0",
+				"0",
+				"0",
+				"0",
+				"0"
+			],
+			"features" : [ "human_variant_feat" ] 
+		}
+	},
+	
+	"dwarf" : {
+		"size" : "medium",
+		"speed" : "25",
+		"languages" : [
+			"common",
+			"dwarvern"
+		],
+		"darkvision" : "true",
+		"features" : [
+			"dwarvernResiliance",
+			"stonecunning"
+			
+		],
+		"profiencyWeapons" : [ 
+			"battleaxe",
+			"handaxe",
+			"throwing_hammer",
+			"warhammer"
+		],
+		"profiencyTools" : [ 
+			"smiths",
+			"brewers",
+			"masons"
+		],
+		"hillDwarf" : {
+			"stat_increases" : [
+				"0",
+				"0",
+				"2",
+				"0",
+				"1",
+				"0"
+			],
+			"features" : [
+				"dwarvernToughness"
+			]
+		},
+		"mountainDwarf" : {
+			"stat_increases" : [
+				"2",
+				"0",
+				"2",
+				"0",
+				"0",
+				"0"
+			],
+			"profiencyArmours" : {
+				"light",
+				"medium"
+			}
+		}
+	},
+	
+	"elf" : {
+		"size" : "medium",
+		"speed" : "30",
+		"darkvision" : "true",
+		"features" : [
+			"keen_senses",
+			"fey_ancestry",
+			"trance"
+		],
+		"languages" : [
+			"common",
+			"elvish"
+		],
+		"high_elf" : {
+			"stat_increases" : [
+				"0",
+				"2",
+				"0",
+				"1",
+				"0",
+				"0"
+			],
+			"profiencyWeapons" : {
+				"longsword",
+				"shortsword",
+				"shortbow",
+				"longbow"
+			},
+			"features" : [ "cantrip" ],
+			"languages" : [ "+1" ]
+		},
+		
+		"wood_elf" : {
+			"stat_increases" : [
+				"0",
+				"2",
+				"0",
+				"0",
+				"1",
+				"0"
+			],
+			"profiencyWeapons" : {
+				"longsword",
+				"shortsword",
+				"shortbow",
+				"longbow"
+			},
+			"features" : [ "fleet_of_foot", "mask_of_the_wild" ]
+		}
+	},
+	
+	"halfling" : {
+		"size" : "small",
+		"speed" : "25",
+		"features" : [
+			"lucky",
+			"brave",
+			"halfling_nimbleness"
+		],
+		"languages" : [
+			"common",
+			"halfling"
+		],
+		
+		"lightfoot" : {
+			"stat_increases" : [
+				"0",
+				"2",
+				"0",
+				"0",
+				"0",
+				"1"
+			],
+			"features" : [ "naturally_stealthy" ]
+		},
+		
+		"stout" : {
+			"stat_increases" : [
+				"0",
+				"2",
+				"1",
+				"0",
+				"0",
+				"0"
+			],
+			"features" : [ "stout_resilience" ]
+		}
+	}
+}
