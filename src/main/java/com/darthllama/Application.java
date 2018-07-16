@@ -1,5 +1,6 @@
 package com.darthllama;
 
+import org.apache.log4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,8 +11,12 @@ import java.util.Arrays;
 
 @SpringBootApplication
 public class Application {
+
+    final static Logger logger = Logger.getLogger(Application.class);
+
     public static void main(String[] args) {
         SpringApplication.run(com.darthllama.Application.class, args);
+        logger.info("Application running...");
     }
 
     @Bean

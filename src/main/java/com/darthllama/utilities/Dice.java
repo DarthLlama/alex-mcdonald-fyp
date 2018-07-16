@@ -1,10 +1,14 @@
 package com.darthllama.utilities;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Dice {
+
+    final static Logger logger = Logger.getLogger(Dice.class);
 
     //Declare the random object
     private static Random random = new Random();
@@ -22,13 +26,13 @@ public class Dice {
         int[] tempValues = new int[4];
         result = 0;
         count = 0;
-        System.out.println("Rolling Ability Scores, result: " + result);
+        logger.info("Rolling Ability Scores, result: " + result);
 
         //for each stat, we have to roll four, six sided dice and remove the lowest.
         while(count < tempValues.length) {
 
             tempValues[count] = Roll(6);
-            System.out.println("Value: " + tempValues[count]);
+            logger.info("Value: " + tempValues[count]);
 
             if (lowestValue > tempValues[count] || lowestValue == 0){
                 lowestValue = tempValues[count];
@@ -37,7 +41,7 @@ public class Dice {
             count++;
         }
         result = tempValues[0] + tempValues[1] + tempValues[2] + tempValues[3];
-        System.out.println("Result total: "  + result);
+        logger.info("Result total: "  + result);
         result -= lowestValue;
         return result;
     }

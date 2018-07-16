@@ -1,5 +1,7 @@
 package com.darthllama.utilities;
 
+import com.darthllama.Application;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class DiceRollerController {
+
+    final static Logger logger = Logger.getLogger(DiceRollerController.class);
 
     public static int globalSides = 6;
 
