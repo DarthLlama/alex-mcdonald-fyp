@@ -1,0 +1,5 @@
+//TODO:Make sure there are no duplicates
+dwarf
+elf
+human
+halfling

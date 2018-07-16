@@ -1,0 +1,37 @@
+//TODO:Make sure there are no duplicates
+//Race Features
+dwarvern_resiliance
+stonecunning
+dwarvern_toughness
+
+keen_senses
+fey_ancestry
+trance
+fleet_of_foot
+mask_of_the_wild
+
+lucky
+brave
+halfling_nimbleness
+naturally_stealthy
+stout_resilience
+
+human_variant_feat
+
+//Class Features
+spellcasting
+ability_score_improvement
+
+//Cleric
+divine_domain
+channel_divinity
+preserve_life
+destroy_undead
+blessed_healer
+divine_strike
+divine_intervention
+supreme_healing
+
+
+//Background Features
+

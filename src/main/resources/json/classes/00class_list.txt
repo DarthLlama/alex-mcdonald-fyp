@@ -1,0 +1,5 @@
+//TODO:Make sure there are no duplicates
+cleric
+fighter
+rogue
+wizard
