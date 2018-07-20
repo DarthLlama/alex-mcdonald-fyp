@@ -13,6 +13,7 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(com.darthllama.Application.class, args);
         //Initialisation, check the JSON files exist
+        logger.info("Checking the JSON files exist. Further validation will come later...");
         //TODO: Ask the user for a location to store said JSON, or as a default, find somewhere to store them
         MasterFileReader.ReadFiles();
         logger.info("Application running...");

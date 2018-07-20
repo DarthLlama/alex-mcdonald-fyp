@@ -22,6 +22,7 @@ public class MasterFileReader {
 
     public static void ReadFiles(){
         //File path
+        //TODO: Provide a way for the user to set up this value
         String filePath = "C:\\Users\\Alex\\Documents\\Programming\\Projects\\" +
                 "alex-mcdonald-fyp\\src\\main\\resources\\json";
 

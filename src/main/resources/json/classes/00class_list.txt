@@ -3,5 +3,3 @@ cleric
 fighter
 rogue
 wizard
-
-barbarian

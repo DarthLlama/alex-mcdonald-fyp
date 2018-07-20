@@ -1,0 +1,40 @@
+{
+	"fighter" : {
+		"hitDie" : "10",
+		"proficienciesArmours" : [ "light", "medium", "heavy", "shields" ],
+		"proficienciesWeapons" : [ "simple", "martial" ],
+		
+		"savingThrows" : [ "0", "2" ]
+		"skillChoice" : [ "acrobatics", "animal_handling", "athletics", "history", "insight", "intimidation", "perception", "survival" ],
+		"archetypes" : [ "champion" ],
+		
+		"1" : {
+			"proficienciesMod" : "2",
+			"features" : [ "fighting_style", "second_wind" ]
+		},
+		
+		"2" : {
+			"proficienciesMod" : "2",
+			"features" : [ "action_surge" ]
+		},
+		
+		"3" : {
+			"proficienciesMod" : "2",
+			"champion" : {
+				
+			}
+		},
+		
+		"4" : {
+			"proficienciesMod" : "2",
+			"features" : [ "ability_score_improvement" ],
+		},
+		
+		"5" : {
+			"proficienciesMod" : "3",
+			"features" : [ "extra_attack" ],
+		}
+		
+	}
+
+}
