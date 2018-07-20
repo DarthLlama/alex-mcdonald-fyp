@@ -1,13 +1,9 @@
 package com.darthllama;
 
+import com.darthllama.parsers.MasterFileReader;
 import org.apache.log4j.Logger;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
 
 @SpringBootApplication
 public class Application {
@@ -16,9 +12,13 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(com.darthllama.Application.class, args);
+        //Initialisation, check the JSON files exist
+        //TODO: Ask the user for a location to store said JSON, or as a default, find somewhere to store them
+        MasterFileReader.ReadFiles();
         logger.info("Application running...");
     }
 
+    /* For debugging, not quite needed for the most part
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
@@ -33,4 +33,5 @@ public class Application {
 
         };
     }
+    */
 }
