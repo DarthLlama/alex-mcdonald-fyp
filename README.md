@@ -52,16 +52,21 @@ This stage will have the interactive side of the development, what the user will
 ##How to Run
 1) "git clone https://github.com/DarthLlama/alex-mcdonald-fyp.git" into the directory where you want the project
 
-2) Build the project
+2) There are two files you need to edit (as of now, eventually, this will be the first question asked to the user);
+	2a) config.properties -> edit "filePath" to the root of the fyp folder i.e
+    - "filePath=C\:\\Users\\Alex\\SpringbootMVC\\alex-mcdonald-fyp"	
 
-3) On the command line, "cd" into the location of the of the jar
 
-4) "java -jar compiled-jar-name.jar"
+3) Build the project
 
-5) On you browser, go to "localhost:8080"
+4) On the command line, "cd" into the location of the of the jar
+
+5) "java -jar compiled-jar-name.jar"
+
+6) On you browser, go to "localhost:8080"
 
 ##Resources
-In case I forget;
+List of active pages
 http://localhost:8080/
 
 Dnd Stuff

@@ -1,5 +1,6 @@
 package com.darthllama.parsers;
 
+import com.darthllama.Application;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -23,8 +24,11 @@ public class MasterFileReader {
     public static void ReadFiles(){
         //File path
         //TODO: Provide a way for the user to set up this value
-        String filePath = "C:\\Users\\Alex\\Documents\\Programming\\Projects\\" +
-                "alex-mcdonald-fyp\\src\\main\\resources\\json";
+
+        //Alex's PC
+        //String filePath = "C:\\Users\\Alex\\Documents\\Programming\\Projects\\" + "alex-mcdonald-fyp\\src\\main\\resources\\json";
+        //ICE Work Laptop location
+        String filePath = Application.props.getProperty("filePath") + Application.props.getProperty("resourceFolderPath") + "\\json";
 
         //each of these files contains a list of files that have a corresponding JSON file
         String class_list_file = "\\classes\\00class_list.txt";

@@ -1,0 +1,167 @@
+{
+	"cleric" : {
+		"hitDie" : "8",
+		"proficienciesArmours" : [ "light", "medium", "shields" ],
+		"proficienciesWeapons" : [ "simple" ],
+		
+		"savingThrows" : [ "4", "5" ]
+		"skillChoice" : [ "history", "insight", "medicine", "persuasion", "religion" ],
+		"archetypes" : [ "life" ],
+		
+		"1" : {
+			"proficienciesMod" : "2",
+			"features" : [ "spellcasting", "divine_domain" ],
+			"amountOfCantripsKnown" : "3",
+			"spellSlots" : ["2"],
+			"life" : {
+			    "spells" [ "bless", "cure_wounds" ],
+			    "proficienciesArmours" : [ "heavy" ],
+			    "features" : [ "disciple_of_life" ]
+			}
+		},
+
+		"2" : {
+		    "proficienciesMod" : "2",
+		    "features" : [ "channel_divinity" ],
+		    "amountOfCantripsKnown" : "3",
+		    "spellSlots" : ["3"],
+		    "life" : {
+                "features" : [ "preserve_life" ]
+		    }
+		},
+
+		"3" : {
+            "proficienciesMod" : "2",
+            "amountOfCantripsKnown" : "3",
+            "spellSlots" : ["3", "2"]
+		},
+
+        "4" : {
+            "proficienciesMod" : "2",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3"]
+		},
+
+		"5" : {
+            "proficienciesMod" : "3",
+            "features" : [ "destroy_undead" ],
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "2"],
+            "life" : {
+                "spells" : [ "beacon_of_hope", "revivify" ]
+            }
+        },
+
+        "6" : {
+            "proficienciesMod" : "3",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3"],
+            "life" : {
+                "features" : [ "blessed_healer" ]
+            }
+        },
+
+        "7" : {
+            "proficienciesMod" : "3",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3", "1"],
+            "life" : {
+                "spells" : [ "death_ward", "guardian_of_faith" ]
+            }
+        },
+
+        "8" : {
+            "proficienciesMod" : "3",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3", "2"],
+            "life" : {
+                "features" : [ "divine_strike" ]
+            }
+        },
+
+        "9" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3", "3", "1"],
+            "life" : {
+                "spells" : [ "mass_cure_wounds", "raise_dead" ]
+            }
+        },
+
+        "10" : {
+            "proficienciesMod" : "4",
+            "features" : [ "divine_intervention" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2"]
+
+        },
+
+        "11" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1"]
+        },
+
+        "12" : {
+            "proficienciesMod" : "4",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1"]
+        },
+
+        "13" : {
+            "proficienciesMod" : "5",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1"]
+        },
+
+        "14" : {
+            "proficienciesMod" : "5",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1"]
+        },
+
+        "15" : {
+            "proficienciesMod" : "5",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1", "1"]
+        },
+
+        "16" : {
+            "proficienciesMod" : "5",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1", "1"]
+        },
+
+        "17" : {
+            "proficienciesMod" : "6",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1", "1", "1"],
+            "life" : {
+                "features" : [ "supreme_healing" ]
+            }
+        },
+
+        "18" : {
+            "proficienciesMod" : "6",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "3", "1", "1", "1", "1"]
+        },
+
+        "19" : {
+            "proficienciesMod" : "6",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "3", "2", "1", "1", "1"]
+        },
+
+        "20" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "3", "2", "2", "1", "1"]
+        }
+	}
+}
