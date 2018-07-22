@@ -1,5 +1,0 @@
-//List of classes
-cleric
-fighter
-rogue
-wizard

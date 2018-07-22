@@ -1,6 +1,0 @@
-//List of races
-//Basic 5e Players Handbook
-dwarf
-elf
-human
-halfling
