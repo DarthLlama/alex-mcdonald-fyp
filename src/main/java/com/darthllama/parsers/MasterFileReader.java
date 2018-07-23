@@ -24,11 +24,9 @@ public class MasterFileReader {
     public static void ReadFiles(){
         //File path
         //TODO: Provide a way for the user to set up this value
-
-        //Alex's PC
-        //String filePath = "C:\\Users\\Alex\\Documents\\Programming\\Projects\\" + "alex-mcdonald-fyp\\src\\main\\resources\\json";
-        //ICE Work Laptop location
-        String filePath = Application.props.getProperty("filePath") + Application.props.getProperty("resourceFolderPath") + "\\json";
+        //i.e. C:\Users\Alex\SpringbootMVC\alex-mcdonald-fyp\src\resources\json
+        String filePath = Application.props.getProperty("filePath") +
+                Application.props.getProperty("resourceFolderPath") + "\\json";
 
         //each of these files contains a list of files that have a corresponding JSON file
         String class_list_file = "\\classes\\00class_list.txt";
@@ -62,7 +60,7 @@ public class MasterFileReader {
                     .collect(Collectors.toList());  //Adds it to the list
 
         } catch (IOException e) {
-            logger.error("IOException:");
+            logger.error("IOException: " + e);
             e.printStackTrace();
         }
 

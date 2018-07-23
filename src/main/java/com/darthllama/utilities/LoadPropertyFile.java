@@ -20,16 +20,19 @@ public class LoadPropertyFile {
         InputStream input = null;
 
         try {
+            //read the file in the project root folder, this will eventually need to be somewhere else
             input = new FileInputStream("config.properties");
             prop.load(input);
             logger.info(prop.getProperty("filePath"));
             return prop;
+
         } catch (IOException ioex) {
             logger.error("IOException at loading properties file: " + ioex);
             ioex.printStackTrace();
         } finally {
             if (input == null) {
                 try {
+                    //Should always close streams those wily things
                     input.close();
                 } catch (IOException ioex) {
                     logger.error("Error closing inputstream: " + ioex);
