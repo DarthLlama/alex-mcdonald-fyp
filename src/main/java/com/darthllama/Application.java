@@ -2,6 +2,7 @@ package com.darthllama;
 
 import com.darthllama.parsers.MasterFileReader;
 import com.darthllama.utilities.LoadPropertyFile;
+import com.darthllama.utilities.WriteJSONFiles;
 import com.darthllama.utilities.WritePropertyFile;
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
@@ -30,9 +31,15 @@ public class Application {
         logger.info("Lets read the file \"config.properties\"...");
         props = LoadPropertyFile.LoadPropertyFile();
 
+        //Create the resources on the user's filesystem
+        //TODO: If they already exist... don't do this. Create an option for the user to refresh them
+        WriteJSONFiles wjf = new WriteJSONFiles();
+        wjf.WriteDefaultJSONFiles(props.getProperty("filePath"));
+
         //TODO: Ask the user for a location to store said JSON, or as a default, find somewhere to store them
         MasterFileReader.ReadFiles();
         logger.info("Application running...");
+
     }
 
     /* For debugging, not quite needed for the most part

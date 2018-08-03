@@ -25,8 +25,9 @@ public class MasterFileReader {
         //File path
         //TODO: Provide a way for the user to set up this value
         //i.e. C:\Users\Alex\SpringbootMVC\alex-mcdonald-fyp\src\resources\json
+        //TODO: This is very bad practise. Create something better. Look it up.
         String filePath = Application.props.getProperty("filePath") +
-                Application.props.getProperty("resourceFolderPath") + "\\json";
+                Application.props.getProperty("resourceFolderPath");
 
         //each of these files contains a list of files that have a corresponding JSON file
         String class_list_file = "\\classes\\00class_list.txt";
