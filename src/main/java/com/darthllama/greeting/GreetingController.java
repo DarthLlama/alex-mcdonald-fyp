@@ -1,6 +1,5 @@
 package com.darthllama.greeting;
 
-import com.darthllama.Application;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

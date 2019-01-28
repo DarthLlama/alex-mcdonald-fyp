@@ -1,0 +1,10 @@
+{
+	"coins" : [
+		"coins_copper"
+		"coins_silver"
+		"coins_electrum"
+		"coins_gold", 
+		"coins_platnium",
+		]
+	}
+}

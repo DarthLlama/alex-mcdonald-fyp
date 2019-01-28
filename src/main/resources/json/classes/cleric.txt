@@ -1,12 +1,23 @@
 {
 	"cleric" : {
 		"hitDie" : "8",
-		"proficienciesArmours" : [ "light", "medium", "shields" ],
-		"proficienciesWeapons" : [ "simple" ],
+		"proficiencies_armours" : [ "light", "medium", "shields" ],
+		"proficiencies_weapons" : [ "simple" ],
 		
-		"savingThrows" : [ "4", "5" ]
-		"skillChoice" : [ "history", "insight", "medicine", "persuasion", "religion" ],
+		"saving_throws" : [ "4", "5" ]
+		"skill_choice" : [ "history", "insight", "medicine", "persuasion", "religion" ],
+		
+		"equipment_choices" : {
+			"1" : ["weapon_mace", "weapon_warhammer"],
+			"2" : ["armour_scale_mail", "armour_leather", "armour_chain_mail"],
+			"3" : ["weapon_crossbow_light+bolt#20", "weapon_simple"],
+			"3" : ["pack_priest", "pack_explorer"]
+		},
+		
+		"equipment" : ["shield", "holy_symbol"],
+		
 		"archetypes" : [ "life" ],
+		"spellcasting_attribute" : "5",
 		
 		"1" : {
 			"proficienciesMod" : "2",

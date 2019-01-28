@@ -20,6 +20,9 @@ human_variant_feat
 //Class Features
 spellcasting
 ability_score_improvement
+extra_attack
+improved_critical
+superior_critical
 
 //Cleric
 divine_domain
@@ -30,6 +33,30 @@ blessed_healer
 divine_strike
 divine_intervention
 supreme_healing
+
+//Fighter
+fighting_style
+additional_fighting_style
+second_wind
+action_surge
+indomitable
+remarkable_athlete
+survivor
+
+//Rogue
+expertise
+sneak_attack
+thieves_cant
+cunning_action
+uncanny_dodge
+evasion
+reliable_talent
+blindsense
+slippery_mind
+elusive
+stroke_of_luck
+
+//Wizard
 
 
 //Background Features

@@ -21,7 +21,7 @@
 		"3" : {
 			"proficienciesMod" : "2",
 			"champion" : {
-				
+				"features" : [ "improved_critical" ]
 			}
 		},
 		
@@ -43,7 +43,7 @@
 		"7" : {
 			"proficienciesMod" : "3",
 			"champion" : {
-			
+				"features" : [ "remarkable_athlete" ]
 			}
 		},
 		
@@ -60,7 +60,7 @@
 		"10" : {
 			"proficienciesMod" : "4",
 			"champion" : {
-			
+				"features" : [ "additional_fighting_style" ]
 			}
 		},
 		
@@ -86,7 +86,7 @@
 		"15" : {
 			"proficienciesMod" : "5",
 			"champion" : {
-			
+				"features" : [ "superior_critical" ]
 			}
 		},
 		
@@ -102,7 +102,7 @@
 		"18" : {
 			"proficienciesMod" : "6",
 			"champion" : {
-			
+				"features" : [ "survivor" ]
 			}
 		},
 		

@@ -1,6 +1,5 @@
 package com.darthllama.utilities;
 
-import com.darthllama.Application;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +20,7 @@ public class DiceRollerController {
         int result = Dice.Roll(sides);
 
         model.addAttribute("result", result);
+        logger.info("Rolled D" + sides + " -> " + result);
 
         return "dice-roller";
     }

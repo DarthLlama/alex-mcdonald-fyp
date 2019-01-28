@@ -1,0 +1,161 @@
+{
+	"wizard" : {
+		"hitDie" : "6",
+		"proficiencies_weapons" : [ "dagger", "dart", "sling", "quarterstaff", "light_crossbow" ],
+		
+		"saving_throws" : [ "4", "5" ],
+		"skill_choice" : [ "arcane", "history", "insight", "investigation", "medicine", "religion" ],
+		"archetypes" : [ "evocation" ],
+		"spellcasting_attribute" : "4",
+		
+		"equipment_choices" : {
+			"1" : ["weapon_quaterstaff", "weapon_dagger"],
+			"2" : ["component_pouch", "arcane_focus"],
+			"3" : ["pack_scholar", "pack_explorer"]
+		},
+		
+		"equipment" : ["spellbook"],
+		
+		"1" : {
+			"proficienciesMod" : "2",
+			"features" : [ "spellcasting", "arcane_recovery" ],
+			"amountOfCantripsKnown" : "3",
+			"spellSlots" : ["2"]
+		},
+
+		"2" : {
+		    "proficienciesMod" : "2",
+		    "features" : [ "arcane_tradition" ],
+		    "amountOfCantripsKnown" : "3",
+		    "spellSlots" : ["3"],
+		    "evocation" : {
+                "features" : [ "evocation_savant", "sculpt_spells" ]
+		    }
+		},
+
+		"3" : {
+            "proficienciesMod" : "2",
+            "amountOfCantripsKnown" : "3",
+            "spellSlots" : ["4", "2"]
+		},
+
+        "4" : {
+            "proficienciesMod" : "2",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3"]
+		},
+
+		"5" : {
+            "proficienciesMod" : "3",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "2"]
+        },
+
+        "6" : {
+            "proficienciesMod" : "3",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3"],
+            "evocation" : {
+                "features" : [ "potent_cantrip" ]
+            }
+        },
+
+        "7" : {
+            "proficienciesMod" : "3",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3", "1"]
+        },
+
+        "8" : {
+            "proficienciesMod" : "3",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3", "2"]
+        },
+
+        "9" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "4",
+            "spellSlots" : ["4", "3", "3", "3", "1"]
+        },
+
+        "10" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2"],
+			"evocation" : {
+				"features" : [ "empowered_evocation" ]
+			}
+
+        },
+
+        "11" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1"]
+        },
+
+        "12" : {
+            "proficienciesMod" : "4",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1"]
+        },
+
+        "13" : {
+            "proficienciesMod" : "5",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1"]
+        },
+
+        "14" : {
+            "proficienciesMod" : "5",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1"],
+			"evocation" : {
+				"features" : ["overchannel"]
+			}
+        },
+
+        "15" : {
+            "proficienciesMod" : "5",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1", "1"]
+        },
+
+        "16" : {
+            "proficienciesMod" : "5",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1", "1"]
+        },
+
+        "17" : {
+            "proficienciesMod" : "6",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "2", "1", "1", "1", "1"]
+        },
+
+        "18" : {
+            "proficienciesMod" : "6",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "3", "1", "1", "1", "1"],
+			"features" : ["spell_mastery"]
+        },
+
+        "19" : {
+            "proficienciesMod" : "6",
+            "features" : [ "ability_score_improvement" ],
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "3", "2", "1", "1", "1"]
+        },
+
+        "20" : {
+            "proficienciesMod" : "4",
+            "amountOfCantripsKnown" : "5",
+            "spellSlots" : ["4", "3", "3", "3", "3", "2", "2", "1", "1"],
+			"features" : ["signature_spell"]
+        }
+	}
+}

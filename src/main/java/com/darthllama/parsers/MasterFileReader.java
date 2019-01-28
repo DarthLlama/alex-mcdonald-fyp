@@ -20,6 +20,7 @@ public class MasterFileReader {
     static List<String> featureList = new ArrayList<>();
     static List<String> raceList = new ArrayList<>();
     static List<String> spellsList = new ArrayList<>();
+    //TODO Equipment
 
     public static void ReadFiles(){
         //File path
@@ -30,10 +31,10 @@ public class MasterFileReader {
                 Application.props.getProperty("resourceFolderPath");
 
         //each of these files contains a list of files that have a corresponding JSON file
-        String class_list_file = "\\classes\\00class_list.txt";
-        String feature_list_file = "\\features\\00features_list.txt";
-        String race_list_file = "\\races\\00race_list.txt";
-        String spells_list_file = "\\spells\\00spells_list.txt";
+        String class_list_file = "\\resources\\classes\\00class_list.txt";
+        String feature_list_file = "\\resources\\features\\00features_list.txt";
+        String race_list_file = "\\resources\\races\\00race_list.txt";
+        String spells_list_file = "\\resources\\spells\\00spells_list.txt";
 
         //read file into stream, try-with-resources
         try (Stream<String> stream = Files.lines(Paths.get(filePath + class_list_file))) {
@@ -46,7 +47,7 @@ public class MasterFileReader {
                     .collect(Collectors.toList());  //Adds it to the list
 
         } catch (IOException e) {
-            logger.error("IOException:");
+            logger.error("IOException:" + e);
             e.printStackTrace();
         }
 
@@ -76,7 +77,7 @@ public class MasterFileReader {
                     .collect(Collectors.toList());  //Adds it to the list
 
         } catch (IOException e) {
-            logger.error("IOException:");
+            logger.error("IOException:" + e);
             e.printStackTrace();
         }
 
@@ -91,20 +92,20 @@ public class MasterFileReader {
                     .collect(Collectors.toList());  //Adds it to the list
 
         } catch (IOException e) {
-            logger.error("IOException:");
+            logger.error("IOException:" + e);
             e.printStackTrace();
         }
 
         //TODO: Parse each and everyone of these
-        logger.info(classList);
-        logger.info(featureList);
-        logger.info(raceList);
-        logger.info(spellsList);
+        logger.info("Class lists: " + classList);
+        logger.info("Feature lists: " + featureList);
+        logger.info("Race lists: " + raceList);
+        logger.info("Spell lists: " + spellsList);
 
         //Check that all the names listed have related files
         int tempCount =0;
         while(tempCount < classList.size()){
-            File file = new File(filePath + "\\classes\\" + classList.get(tempCount) + ".txt");
+            File file = new File(filePath + "\\resources\\classes\\" + classList.get(tempCount) + ".txt");
             if(!file.exists()){
                 logger.error(classList.get(tempCount) + ".txt does not exist");
             }
@@ -113,7 +114,7 @@ public class MasterFileReader {
 
         tempCount = 0;
         while(tempCount < featureList.size()){
-            File file = new File(filePath + "\\features\\" + featureList.get(tempCount) + ".txt");
+            File file = new File(filePath + "\\resources\\features\\" + featureList.get(tempCount) + ".txt");
             if(!file.exists()){
                 logger.error(featureList.get(tempCount) + ".txt does not exist");
             }
@@ -122,7 +123,7 @@ public class MasterFileReader {
 
         tempCount = 0;
         while(tempCount < raceList.size()){
-            File file = new File(filePath + "\\features\\" + raceList.get(tempCount) + ".txt");
+            File file = new File(filePath + "\\resources\\features\\" + raceList.get(tempCount) + ".txt");
             if(!file.exists()){
                 logger.error(raceList.get(tempCount) + ".txt does not exist");
             }
@@ -131,7 +132,7 @@ public class MasterFileReader {
 
         tempCount = 0;
         while(tempCount < spellsList.size()){
-            File file = new File(filePath + "\\features\\" + spellsList.get(tempCount) + ".txt");
+            File file = new File(filePath + "\\resources\\features\\" + spellsList.get(tempCount) + ".txt");
             if(!file.exists()){
                 logger.error(spellsList.get(tempCount) + ".txt does not exist");
             }

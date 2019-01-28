@@ -17,13 +17,13 @@ import java.util.stream.Stream;
 public class WriteJSONFiles {
 
     //Logging
-    final static Logger logger = Logger.getLogger(WriteJSONFiles.class);
+    private final static Logger logger = Logger.getLogger(WriteJSONFiles.class);
 
     //Collections
-    static List<String> classList = new ArrayList<>();
-    static List<String> featureList = new ArrayList<>();
-    static List<String> raceList = new ArrayList<>();
-    static List<String> spellsList = new ArrayList<>();
+    private static List<String> classList = new ArrayList<>();
+    private static List<String> featureList = new ArrayList<>();
+    private static List<String> raceList = new ArrayList<>();
+    private static List<String> spellsList = new ArrayList<>();
 
     public void WriteDefaultJSONFiles(String filePath) {
         //logger.info(getFile("json/classes/00class_list.txt"));
@@ -34,25 +34,29 @@ public class WriteJSONFiles {
         logger.info("Resources not found. Creating...");
 
         //Makes the folders
-        File dir = new File(filePath + "\\alex-mcdonald-fyp\\classes");
+        File dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\classes");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\features");
+            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\features");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\races");
+            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\races");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\spells");
+            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\spells");
+        dir.mkdirs();
+        //config.application
+            dir = new File(filePath + "\\alex-mcdonald-fyp");
         dir.mkdirs();
 
-        //TODO: I really have to finish creating hte JSON files to be able to finish testing this
-        writeFile(filePath + "\\alex-mcdonald-fyp\\classes\\00class_list.txt", getFile("json/classes/00class_list.txt"));
-        //writeFile(getFile(filePath + "\\alex-mcdonald-fyp\\features\\00features_list.txt"),"json/features/00features_list.txt"));
-        //writeFile(getFile(filePath + "\\alex-mcdonald-fyp\\races\\00race_list.txt"),"json/races/00race_list.txt"));
-        //writeFile(getFile(filePath + "\\alex-mcdonald-fyp\\spells\\00spells_list.txt"),"json/spells/00spells_list.txt"));
+        //TODO: I really have to finish creating the JSON files to be able to finish testing this
+        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\classes\\00class_list.txt", getFile("json/classes/00class_list.txt"));
+        //writeFile(getFile(filePath + "\\alex-mcdonald-fyp\\resources\features\\00features_list.txt"),"json/features/00features_list.txt"));
+        //writeFile(getFile(filePath + "\\alex-mcdonald-fyp\\resources\races\\00race_list.txt"),"json/races/00race_list.txt"));
+        //writeFile(getFile(filePath + "\\alex-mcdonald-fyp\\resources\spells\\00spells_list.txt"),"json/spells/00spells_list.txt"));
+        //writeFile(filePath + "\\alex-mcdonald-fyp\\config.properties",getFile("config.properties"));
 
 
         //TODO: Do this for Races, Features & Spells
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\classes\\00class_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\classes\\00class_list.txt"))) {
             //stream.forEach(System.out::println);
             classList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -62,7 +66,7 @@ public class WriteJSONFiles {
                     .collect(Collectors.toList());  //Adds it to the list
 
         } catch (IOException e) {
-            logger.error("IOException:");
+            logger.error("IOException:" + e);
             e.printStackTrace();
         }
 
@@ -70,7 +74,7 @@ public class WriteJSONFiles {
         int tempCount = 0;
         while (tempCount < classList.size()) {
             getFile("json/classes/" + classList.get(tempCount) + ".txt");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\classes\\" + classList.get(tempCount) + ".txt", getFile("json/classes/" + classList.get(tempCount) + ".txt"));
+            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\classes\\" + classList.get(tempCount) + ".txt", getFile("json/classes/" + classList.get(tempCount) + ".txt"));
             tempCount++;
         }
 
@@ -92,6 +96,7 @@ public class WriteJSONFiles {
             scanner.close();
 
         } catch (IOException e) {
+            logger.error("IOException:" + e);
             e.printStackTrace();
         }
 
@@ -122,7 +127,7 @@ public class WriteJSONFiles {
                     fw.close();
 
             } catch (IOException ex) {
-
+                logger.error("IOException:" + ex);
                 ex.printStackTrace();
 
             }
