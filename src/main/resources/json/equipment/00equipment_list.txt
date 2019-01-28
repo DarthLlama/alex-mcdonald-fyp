@@ -4,7 +4,7 @@
 //the others because these details are better suited to be in a 
 //database
 //I'm unsure if coins should be here, I almost feel like they should
-//have a separate catagory, but if this works, then hopefully it should work
+//have a separate catagory, but if this works, then hopefully it //should work
 Coins
 Armour
 Weapons
