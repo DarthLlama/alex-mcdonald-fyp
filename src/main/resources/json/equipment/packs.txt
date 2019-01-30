@@ -9,7 +9,7 @@
 		"pack_diplomat" : {
 			"cost" : ["39", "coins_gold"],
 			"contents" : [
-				"chest", "map_case#2", "clothes_fine", "bottle_of_ink", "ink_pen", "lamp", "flask_of_oil#2", "sheet_of_paper#5", "vial_of_perfume", "sealing_wax", "soap"
+				"chest", "case_map#2", "clothes_fine", "bottle_of_ink", "ink_pen", "lamp", "flask_of_oil#2", "sheet_of_paper#5", "vial_of_perfume", "sealing_wax", "soap"
 			]
 		},
 		"pack_dungeoneer" : {

@@ -1,0 +1,154 @@
+{
+	"tools" : {
+		"tools_artisan" :{
+			"tools_alchemist_supplies" : {
+				"weight" : "8",
+				"cost" : ["50", "coins_gold"]
+			},
+			"tools_brewers_supplies" : {
+				"weight" : "20",
+				"cost" : ["9", "coins_gold"]
+			},
+			"tools_caligraphers_supplies" : {
+				"weight" : "5",
+				"cost" : ["10", "coins_gold"]
+			},
+			"tools_cartographer" : {
+				"weight" : "6",
+				"cost" : ["15", "coins_gold"]
+			},
+			"tools_cobbler" : {
+				"weight" : "5",
+				"cost" : ["5", "coins_gold"]
+			},
+			"tools_cooks_utensils" : {
+				"weight" : "8",
+				"cost" : ["1", "coins_gold"]
+			},
+			"tools_glassblower" : {
+				"weight" : "5",
+				"cost" : ["30", "coins_gold"]
+			},
+			"tools_jeweler" : {
+				"weight" : "2",
+				"cost" : ["25", "coins_gold"]
+			},
+			"tools_leatherworker" : {
+				"weight" : "5",
+				"cost" : ["5", "coins_gold"]
+			},
+			"tools_mason" : {
+				"weight" : "8",
+				"cost" : ["10", "coins_gold"]
+			},
+			"tools_painter_supplies" : {
+				"weight" : "5",
+				"cost" : ["10", "coins_gold"]
+			},
+			"tools_potter" : {
+				"weight" : "3",
+				"cost" : ["10", "coins_gold"]
+			},
+			"tools_smith" : {
+				"weight" : "8",
+				"cost" : ["20", "coins_gold"]
+			},
+			"tools_tinker" : {
+				"weight" : "10",
+				"cost" : ["50", "coins_gold"]
+			},
+			"tools_weaver" : {
+				"weight" : "5",
+				"cost" : ["1", "coins_gold"]
+			},
+			"tools_woodcarver" : {
+				"weight" : "5",
+				"cost" : ["1", "coins_gold"]
+			}
+		},
+		"tools_disguise" :{
+			"weight" : "3",
+			"cost" : ["25", "coins_gold"]
+		},
+		"tools_forgery_kit" :{
+			"weight" : "5",
+			"cost" : ["15", "coins_gold"]
+		},
+		"tools_gaming_set" :{
+			"dice_set" : {
+				"weight" : "",
+				"cost" : ["1", "coins_silver"]
+			},
+			"dragonchess_set" : {
+				"weight" : "0.5",
+				"cost" : ["1", "coins_gold"]
+			},
+			"playing_card_set" : {
+				"weight" : "",
+				"cost" : ["5", "coins_silver"]
+			},
+			"three_dragon_ante_set" : {
+				"weight" : "",
+				"cost" : ["1", "coins_gold"]
+			}
+		},
+		"tools_herbalism_kit" :{
+			"weight" : "3",
+			"cost" : ["5", "coins_gold"]
+		},
+		"tools_musical_instrument" :{
+			"bagpipes" : {
+				"weight" : "6",
+				"cost" : ["30", "coins_gold"]
+			},
+			"drum" : {
+				"weight" : "3",
+				"cost" : ["6", "coins_gold"]
+			},
+			"dulcimer" : {
+				"weight" : "10",
+				"cost" : ["25", "coins_gold"]
+			},
+			"flute" : {
+				"weight" : "1",
+				"cost" : ["2", "coins_gold"]
+			},
+			"lute" : {
+				"weight" : "2",
+				"cost" : ["35", "coins_gold"]
+			},
+			"lyre" : {
+				"weight" : "2",
+				"cost" : ["30", "coins_gold"]
+			},
+			"horn" : {
+				"weight" : "2",
+				"cost" : ["3", "coins_gold"]
+			},
+			"pan_flute" : {
+				"weight" : "2",
+				"cost" : ["12", "coins_gold"]
+			},
+			"shawn" : {
+				"weight" : "1",
+				"cost" : ["2", "coins_gold"]
+			},
+			"viol" : {
+				"weight" : "1",
+				"cost" : ["30", "coins_gold"]
+			}
+		},
+		"tools_navigator" :{
+			"weight" : "2",
+			"cost" : ["25", "coins_gold"]
+		},
+		"tools_poisoner_kit" :{
+			"weight" : "2",
+			"cost" : ["50", "coins_gold"]
+		},
+		"tools_thieves" :{
+			"weight" : "1",
+			"cost" : ["25", "coins_gold"]
+		}
+	}
+}

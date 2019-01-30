@@ -1,0 +1,414 @@
+{
+	"adventuring_gear" : {
+		"abacus" : {
+			"weight" : "2",
+			"cost" : ["2", "coins_gold"]
+		},
+		"acid_vial" : {
+			"weight" : "1",
+			"cost" : ["25", "coins_gold"]
+		},
+		"alchemists_fire_flask" : {
+			"weight" : "1",
+			"cost" : ["50", "coins_gold"]
+		},
+		"ammunition" : {
+			"arrow#20" : {
+				"weight" : "1",
+				"cost" : ["1", "coins_gold"]
+			},
+			"blowgun_needles#50" : {
+				"weight" : "1",
+				"cost" : ["1", "coins_gold"]
+			},
+			"crossbow_bolts#20" : {
+				"weight" : "1.5",
+				"cost" : ["1", "coins_gold"]
+			},
+			"sling#20" : {
+				"weight" : "1.5",
+				"cost" : ["1", "coins_copper"]
+			}
+		},
+		"antitoxin_vial" : {
+			"weight" : "",
+			"cost" : ["50", "coins_gold"]
+		},
+		"arcane_focus" : {
+			"crystal" : {
+				"weight" : "1",
+				"cost" : ["10", "coins_gold"]
+			},
+			"orb" : {
+				"weight" : "3",
+				"cost" : ["20", "coins_gold"]
+			},
+			"rod" : {
+				"weight" : "2",
+				"cost" : ["10", "coins_gold"]
+			},
+			"staff" : {
+				"weight" : "4",
+				"cost" : ["5", "coins_gold"]
+			},
+			"wand" : {
+				"weight" : "1",
+				"cost" : ["10", "coins_gold"]
+			},
+		},
+		"backpack" : {
+			"weight" : "5",
+			"cost" : ["2", "coins_gold"]
+		},
+		"ball_bearing_bag" : {
+			"weight" : "2",
+			"cost" : ["1", "coins_gold"]
+		},
+		"barrel" : {
+			"weight" : "70",
+			"cost" : ["2", "coins_gold"]
+		},
+		"basket" : {
+			"weight" : "2",
+			"cost" : ["4", "coins_silver"]
+		},
+		"bedroll" : {
+			"weight" : "7",
+			"cost" : ["1", "coins_gold"]
+		},
+		"bell" : {
+			"weight" : "",
+			"cost" : ["1", "coins_gold"]
+		},
+		"blanket" : {
+			"weight" : "3",
+			"cost" : ["5", "coins_silver"]
+		},
+		"block_and_tackle" : {
+			"weight" : "5",
+			"cost" : ["1", "coins_gold"]
+		},
+		"book" : {
+			"weight" : "5",
+			"cost" : ["25", "coins_gold"]
+		},
+		"bottle_glass" : {
+			"weight" : "2",
+			"cost" : ["2", "coins_gold"]
+		},
+		"bucket" : {
+			"weight" : "2",
+			"cost" : ["5", "coins_copper"]
+		},
+		"caltrops_bag" : {
+			"weight" : "2",
+			"cost" : ["1", "coins_gold"]
+		},
+		"candle" : {
+			"weight" : "",
+			"cost" : ["1", "coins_copper"]
+		},
+		"case_crossbow_bolt" : {
+			"weight" : "1",
+			"cost" : ["1", "coins_gold"]
+		},
+		"case_map" : {
+			"weight" : "",
+			"cost" : ["50", "coins_gold"]
+		},
+		"chain" : {
+			"weight" : "10",
+			"cost" : ["5", "coins_gold"]
+		},
+		"chalk" : {
+			"weight" : "",
+			"cost" : ["1", "coins_copper"]
+		},
+		"chest" : {
+			"weight" : "25",
+			"cost" : ["5", "coins_gold"]
+		},
+		"climbers_kit" : {
+			"weight" : "12",
+			"cost" : ["25", "coins_gold"]
+		},
+		"clothes_common" : {
+			"weight" : "3",
+			"cost" : ["5", "coins_silver"]
+		},
+		"clothes_costume" : {
+			"weight" : "4",
+			"cost" : ["5", "coins_silver"]
+		},
+		"clothes_fine" : {
+			"weight" : "6",
+			"cost" : ["15", "coins_gold"]
+		},
+		"clothes_traveler" : {
+			"weight" : "4",
+			"cost" : ["2", "coins_gold"]
+		},
+		"component_pouch" : {
+			"weight" : "2",
+			"cost" : ["25", "coins_gold"]
+		},
+		"crowbar" : {
+			"weight" : "5",
+			"cost" : ["2", "coins_gold"]
+		},
+		"druidic_focus" : {
+			"sprig_of_mistletoe" : {
+				"weight" : "",
+				"cost" : ["1", "coins_gold"]
+			},
+			"totem" : {
+				"weight" : "",
+				"cost" : ["1", "coins_gold"]
+			},
+			"wooden_staff" : {
+				"weight" : "4",
+				"cost" : ["5", "coins_gold"]
+			},
+			"yew_wand" : {
+				"weight" : "1",
+				"cost" : ["10", "coins_gold"]
+			}
+		},
+		"fishing_tackle" : {
+			"weight" : "4",
+			"cost" : ["1", "coins_gold"]
+		},
+		"flask_or_tankard" : {
+			"weight" : "1",
+			"cost" : ["2", "coins_copper"]
+		},
+		"grappling_hook" : {
+			"weight" : "4",
+			"cost" : ["2", "coins_gold"]
+		},
+		"hammer" : {
+			"weight" : "3",
+			"cost" : ["1", "coins_gold"]
+		},
+		"hammer_sledge" : {
+			"weight" : "10",
+			"cost" : ["2", "coins_gold"]
+		},
+		"healers_kit" : {
+			"weight" : "3",
+			"cost" : ["5", "coins_gold"]
+		},
+		"holy_symbol" {
+			"amulet" : {
+				"weight" : "1",
+				"cost" : ["5", "coins_gold"]
+			},
+			"emblem" : {
+				"weight" : "",
+				"cost" : ["5", "coins_gold"]
+			},
+			"reliquary" : {
+				"weight" : "2",
+				"cost" : ["5", "coins_gold"]
+			}
+		},
+		"holy_water_flask" : {
+			"weight" : "1",
+			"cost" : ["25", "coins_gold"]
+		},
+		"hourglass" : {
+			"weight" : "1",
+			"cost" : ["25", "coins_gold"]
+		},
+		"hunting_trap" : {
+			"weight" : "5",
+			"cost" : ["25", "coins_gold"]
+		},
+		"ink_bottle" : {
+			"weight" : "",
+			"cost" : ["10", "coins_gold"]
+		},
+		"ink_pen" : {
+			"weight" : "",
+			"cost" : ["2", "coins_copper"]
+		},
+		"jug_or_pitcher" : {
+			"weight" : "4",
+			"cost" : ["2", "coins_copper"]
+		},
+		"ladder_10_feet" : {
+			"weight" : "25",
+			"cost" : ["1", "coins_silver"]
+		},
+		"lamp" : {
+			"weight" : "",
+			"cost" : ["5", "coins_silver"]
+		},
+		"lanturn_bullseye" : {
+			"weight" : "2",
+			"cost" : ["10", "coins_gold"]
+		},
+		"lanturn_hooded" : {
+			"weight" : "2",
+			"cost" : ["5", "coins_gold"]
+		},
+		"lock" : {
+			"weight" : "1",
+			"cost" : ["10", "coins_gold"]
+		},
+		"magnifying_glass" : {
+			"weight" : "",
+			"cost" : ["100", "coins_gold"]
+		},
+		"manacles" : {
+			"weight" : "6",
+			"cost" : ["2", "coins_gold"]
+		},
+		"mess_kit" : {
+			"weight" : "1",
+			"cost" : ["2", "coins_silver"]
+		},
+		"mirror_steel" : {
+			"weight" : "0.5",
+			"cost" : ["5", "coins_gold"]
+		},
+		"oil_flask" : {
+			"weight" : "1",
+			"cost" : ["1", "coins_silver"]
+		},
+		"paper" : {
+			"weight" : "",
+			"cost" : ["2", "coins_silver"]
+		},
+		"parchement" : {
+			"weight" : "",
+			"cost" : ["1", "coins_silver"]
+		},
+		"perfume_vial" : {
+			"weight" : "",
+			"cost" : ["5", "coins_gold"]
+		},
+		"pick_miners" : {
+			"weight" : "10",
+			"cost" : ["2", "coins_gold"]
+		},
+		"piton" : {
+			"weight" : "0.25",
+			"cost" : ["5", "coins_copper"]
+		},
+		"poison_basic_vial" : {
+			"weight" : "",
+			"cost" : ["100", "coins_gold"]
+		},
+		"pole" : {
+			"weight" : "7",
+			"cost" : ["10", "coins_copper"]
+		},
+		"pot_iron" : {
+			"weight" : "10",
+			"cost" : ["2", "coins_gold"]
+		},
+		"potion_of_healing" : {
+			"weight" : "0.5",
+			"cost" : ["50", "coins_gold"]
+		},
+		"pouch" : {
+			"weight" : "1",
+			"cost" : ["5", "coins_silver"]
+		},
+		"quiver" : {
+			"weight" : "1",
+			"cost" : ["1", "coins_gold"]
+		},
+		"ram_portable" : {
+			"weight" : "35",
+			"cost" : ["4", "coins_gold"]
+		},
+		"ration" : {
+			"weight" : "2",
+			"cost" : ["5", "coins_silver"]
+		},
+		"robes" : {
+			"weight" : "4",
+			"cost" : ["1", "coins_gold"]
+		},
+		"rope_hempen" : {
+			"weight" : "10",
+			"cost" : ["1", "coins_gold"]
+		},
+		"rope_silk" : {
+			"weight" : "5",
+			"cost" : ["10", "coins_gold"]
+		},
+		"sack" : {
+			"weight" : "0.5",
+			"cost" : ["1", "coins_copper"]
+		},
+		"scale_merchants" : {
+			"weight" : "3",
+			"cost" : ["5", "coins_gold"]
+		},
+		"sealing_wax" : {
+			"weight" : "",
+			"cost" : ["5", "coins_silver"]
+		},
+		"shovel" : {
+			"weight" : "5",
+			"cost" : ["2", "coins_gold"]
+		},
+		"signal_whistle" : {
+			"weight" : "",
+			"cost" : ["5", "coins_copper"]
+		},
+		"signet_ring" : {
+			"weight" : "",
+			"cost" : ["5", "coins_gold"]
+		},
+		"soap" : {
+			"weight" : "",
+			"cost" : ["2", "coins_copper"]
+		},
+		"spellbook" : {
+			"weight" : "3",
+			"cost" : ["50", "coins_gold"]
+		},
+		"spikes_iron" : {
+			"weight" : "5",
+			"cost" : ["1", "coins_gold"]
+		},
+		"spyglass" : {
+			"weight" : "1",
+			"cost" : ["1000", "coins_gold"]
+		},
+		"tent_two_person" : {
+			"weight" : "20",
+			"cost" : ["2", "coins_gold"]
+		},
+		"tinderbox" : {
+			"weight" : "1",
+			"cost" : ["5", "coins_silver"]
+		},
+		"torch" : {
+			"weight" : "1",
+			"cost" : ["5", "coins_silver"]
+		},
+		"vial" : {
+			"weight" : "",
+			"cost" : ["1", "coins_gold"]
+		},
+		"waterskin" : {
+			"weight" : "5",
+			"cost" : ["2", "coins_silver"]
+		},
+		"whetstone" : {
+			"weight" : "1",
+			"cost" : ["1", "coins_copper"]
+		}
+		
+		
+		
+		
+		
+		
+	}
+}
