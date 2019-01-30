@@ -1,0 +1,17 @@
+//Equipment list
+//Broken down via catagory, here is a list of all of the stuff that 
+//you should find in those files. This file is a little different to
+//the others because these details are better suited to be in a 
+//database
+//I'm unsure if coins should be here, I almost feel like they should
+//have a separate catagory, but if this works, then hopefully it //should work
+coins
+armour
+weapons
+packs
+tools
+adventuring_gear
+
+//In my experience these rarely come up, but I want the infrastructure to be prepared for them
+//Mounts + other animals
+//Trade Goods

@@ -56,8 +56,21 @@ slippery_mind
 elusive
 stroke_of_luck
 
+fast_hands
+second_story_work
+supreme_sneak
+use_magic_device
+thiefs_reflexes
+
 //Wizard
+arcane_recovery
+spell_mastery
+signature_spell
 
-
+evocation_savant
+sculpt_spells
+potent_cantrip
+empowered_evocation
+overchannel
 //Background Features
 

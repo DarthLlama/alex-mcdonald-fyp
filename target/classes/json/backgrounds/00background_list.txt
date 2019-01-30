@@ -1,0 +1,7 @@
+//List of classes
+acolyte
+criminal
+folk_hero
+noble
+sage
+soldier

@@ -1,0 +1,46 @@
+{
+	"packs" : {
+		"pack_burglar" : {
+			"cost" : ["16", "coins_gold"],
+			"contents" : [
+				"backpack", "ball_bearings#1000", "string#10", "bell", "crowbar", "hammer", "pitons#10", "lanturn_hooded", "flask_of_oil#2", "rations#5", "tinderbox", "waterskin", "rope#50"
+			]
+		},
+		"pack_diplomat" : {
+			"cost" : ["39", "coins_gold"],
+			"contents" : [
+				"chest", "case_map#2", "clothes_fine", "bottle_of_ink", "ink_pen", "lamp", "flask_of_oil#2", "sheet_of_paper#5", "vial_of_perfume", "sealing_wax", "soap"
+			]
+		},
+		"pack_dungeoneer" : {
+			"cost" : ["12", "coins_gold"],
+			"contents" : [
+				"backpack", "crowbar", "hammer", "pitons#10", "torches#10", "tinderbox", "rations#10", "waterskin", "rope#50"
+			]
+		},
+		"pack_entertainer" : {
+			"cost" : ["40", "coins_gold"],
+			"contents" : [
+				"backpack", "bedroll", "clothes_costume#2", "candles#5", "rations#5", "waterskin", "kit_disguise"
+			]
+		},
+		"pack_explorer" : {
+			"cost" : ["10", "coins_gold"],
+			"contents" : [
+				"backpack", "bedroll", "mess_kit", "tinderbox", "torches#10", "rations#10", "waterskin", "rope#50"
+			]
+		},
+		"pack_priest" : {
+			"cost" : ["19", "coins_gold"],
+			"contents" : [
+				"backpack", "blanket", "candles#10", "tinderbox", "alms_box", "insense_block#2", "censer", "vestments", "rations#2", "waterskin"
+			]
+		},
+		"pack_scholar" : {
+			"cost" : ["40", "coins_gold"],
+			"contents" : [
+				"backpack", "book_or_lore", "bottle_of_ink", "ink_pen", "parchment#10", "little_bag_of_sand", "small_knife"
+			]
+		}
+	}
+}

@@ -1,0 +1,242 @@
+{
+	"weapons" : {
+		"simple_melee" : {
+			"weapon_club" : {
+				"cost" : ["1", "coins_silver"],
+				"damage" : ["1d4", "bludgeoning"],
+				"weight" : "2",
+				"properties" : ["light"]
+			},
+			"weapon_dagger" : {
+				"cost" : ["2", "coins_gold"],
+				"damage" : ["1d4", "piercing"],
+				"weight" : "1",
+				"properties" : ["finesse", "light", "thrown_20/60"]
+			},
+			"weapon_greatclub" : {
+				"cost" : ["2", "coins_silver"],
+				"damage" : ["1d8", "bludgeoning"],
+				"weight" : "10",
+				"properties" : ["two_handed"]
+			},
+			"weapon_handaxe" : {
+				"cost" : ["5", "coins_gold"],
+				"damage" : ["1d6", "slashing"],
+				"weight" : "2",
+				"properties" : ["thrown_20/60", "versatile_1d8"]
+			},
+			"weapon_javelin" : {
+				"cost" : ["5", "coins_silver"],
+				"damage" : ["1d6", "piercing"],
+				"weight" : "2",
+				"properties" : ["thrown_30/120"]
+			},
+			"weapon_light_hammer" : {
+				"cost" : ["1", "coins_silver"],
+				"damage" : ["1d4", "bludgeoning"],
+				"weight" : "2",
+				"properties" : ["light"]
+			},
+			"weapon_mace" : {
+				"cost" : ["5", "coins_gold"],
+				"damage" : ["1d6", "bludgeoning"],
+				"weight" : "4"
+			},
+			"weapon_quarterstaff" : {
+				"cost" : ["1", "coins_silver"],
+				"damage" : ["1d6", "bludgeoning"],
+				"weight" : "2",
+				"properties" : ["versatile_1d8"]
+			},
+			"weapon_sickle" : {
+				"cost" : ["1", "coins_gold"],
+				"damage" : ["1d4", "slashing"],
+				"weight" : "2",
+				"properties" : ["light"]
+			},
+			"weapon_spear" : {
+				"cost" : ["1", "coins_gold"],
+				"damage" : ["1d6", "piercing"],
+				"weight" : "3",
+				"properties" : ["thrown_20/60", "versatile_1d8"]
+			},
+			"weapon_unarmed" : {
+				"cost" : [],
+				"damage" : ["1", "bludgeoning"],
+				"weight" : "",
+				"properties" : []
+			}
+		},
+		
+		"simple_ranged" : {
+			"weapon_crossbow_light" : {
+				"cost" : ["25", "coins_gold"],
+				"damage": ["1d8", "piercing"],
+				"weight" : "5",
+				"properties" : ["ammunition_80/120", "loading", "two_handed"]
+			},
+			"weapon_dart" : {
+				"cost" : ["5", "coins_copper"],
+				"damage": ["1d4", "piercing"],
+				"weight" : "0.25",
+				"properties" : ["finesse", "ammunition_20/60"]
+			},
+			"weapon_shortbow" : {
+				"cost" : ["25", "coins_gold"],
+				"damage": ["1d6", "piercing"],
+				"weight" : "2",
+				"properties" : ["ammunition_80/320", "two_handed"]
+			},
+			"weapon_sling" : {
+				"cost" : ["1", "coins_silver"],
+				"damage": ["1d4", "bludgeoning"],
+				"weight" : "",
+				"properties" : ["ammunition_30/120"]
+			}
+		},
+		
+		"martial_melee" : {
+			"weapon_battleaxe" : {
+				"cost" : ["10", "coins_gold"],
+				"damage": ["1d8", "slashing"],
+				"weight" : "5",
+				"properties" : ["versatile_1d10"]
+			},
+			"weapon_flail" : {
+				"cost" : ["10", "coins_gold"],
+				"damage": ["1d8", "bludgeoning"],
+				"weight" : "2",
+				"properties" : []
+			},
+			"weapon_glaive" : {
+				"cost" : ["20", "coins_gold"],
+				"damage": ["1d10", "slashing"],
+				"weight" : "6",
+				"properties" : ["heavy", "reach", "two_handed"]
+			},
+			"weapon_greataxe" : {
+				"cost" : ["30", "coins_gold"],
+				"damage": ["1d12", "slashing"],
+				"weight" : "7",
+				"properties" : ["heavy", "two_handed"]
+			},
+			"weapon_greatsword" : {
+				"cost" : ["50", "coins_gold"],
+				"damage": ["2d6", "slashing"],
+				"weight" : "6",
+				"properties" : ["heavy", "two_handed"]
+			},
+			"weapon_halberd" : {
+				"cost" : ["20", "coins_gold"],
+				"damage": ["1d10", "slashing"],
+				"weight" : "6",
+				"properties" : ["heavy", "reach", "two_handed"]
+			},
+			"weapon_lance" : {
+				"cost" : ["10", "coins_gold"],
+				"damage": ["1d10", "slashing"],
+				"weight" : "6",
+				"properties" : ["heavy", "reach", "two_handed"]
+			},
+			"weapon_longsword" : {
+				"cost" : ["15", "coins_gold"],
+				"damage": ["1d8", "slashing"],
+				"weight" : "3",
+				"properties" : ["versatile_1d10"]
+			},
+			"weapon_maul" : {
+				"cost" : ["10", "coins_gold"],
+				"damage": ["2d6", "bludgeoning"],
+				"weight" : "10",
+				"properties" : ["heavy", "two_handed"]
+			},
+			"weapon_morningstar" : {
+				"cost" : ["15", "coins_gold"],
+				"damage": ["1d8", "bludgeoning"],
+				"weight" : "4",
+				"properties" : []
+			},
+			"weapon_pike" : {
+				"cost" : ["5", "coins_gold"],
+				"damage": ["1d10", "piercing"],
+				"weight" : "18",
+				"properties" : ["heavy", "reach", "two_handed"]
+			},
+			"weapon_rapier" : {
+				"cost" : ["25", "coins_gold"],
+				"damage": ["1d8", "piercing"],
+				"weight" : "2",
+				"properties" : ["finesse"]
+			},
+			"weapon_scimitar" : {
+				"cost" : ["25", "coins_gold"],
+				"damage": ["1d6", "slashing"],
+				"weight" : "3",
+				"properties" : ["finesse", "light"]
+			},
+			"weapon_shortsword" : {
+				"cost" : ["10", "coins_gold"],
+				"damage": ["1d6", "piercing"],
+				"weight" : "2",
+				"properties" : ["finesse", "light"]
+			},
+			"weapon_trident" : {
+				"cost" : ["5", "coins_gold"],
+				"damage": ["1d6", "piercing"],
+				"weight" : "4",
+				"properties" : ["thrown_20/60", "versatile_1d8"]
+			},
+			"weapon_war_pick" : {
+				"cost" : ["5", "coins_gold"],
+				"damage": ["1d8", "piercing"],
+				"weight" : "2",
+				"properties" : []
+			},
+			"weapon_warhammer" : {
+				"cost" : ["15", "coins_gold"],
+				"damage": ["1d8", "bludgeoning"],
+				"weight" : "2",
+				"properties" : ["versatile_1d10"]
+			},
+			"weapon_whip" : {
+				"cost" : ["2", "coins_gold"],
+				"damage": ["1d4", "slashing"],
+				"weight" : "3",
+				"properties" : ["finesse", "reach"]
+			}
+		},
+		
+		"martial_ranged" : {
+			"weapon_blowgun" : {
+				"cost" : ["10", "coins_gold"],
+				"damage": ["1", "piercing"],
+				"weight" : "1",
+				"properties" : ["ammunition_25/100", "loading"]
+			},
+			"weapon_crossbow_hand" : {
+				"cost" : ["75", "coins_gold"],
+				"damage": ["1d6", "piercing"],
+				"weight" : "3",
+				"properties" : ["ammunition_30/120", "light", "loading"]
+			},
+			"weapon_crowwbow_heavy" : {
+				"cost" : ["50", "coins_gold"],
+				"damage": ["1d10", "piercing"],
+				"weight" : "18",
+				"properties" : ["ammunition_100/400", "heavy", "loading", "two_handed"]
+			},
+			"weapon_longbow" : {
+				"cost" : ["50", "coins_gold"],
+				"damage": ["1d8", "piercing"],
+				"weight" : "2",
+				"properties" : ["ammunition_150/600", "heavy", "two_handed"]
+			},
+			"weapon_net" : {
+				"cost" : ["1", "coins_gold"],
+				"damage": [],
+				"weight" : "3",
+				"properties" : ["special_net", "thrown_5/15"]
+			}
+		}
+	}
+}

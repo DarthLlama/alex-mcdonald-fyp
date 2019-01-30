@@ -1,0 +1,91 @@
+{
+	"armour" : {
+		"armour_light" : {
+			"dex_mod" : "full",
+			"armour_padded" : {
+				"cost" : ["5", "coins_gold"],
+				"armour_class" : "11",
+				"stealth_disadvantage" : "true",
+				"wieght" : "8"
+			},
+			"armour_leather" : {
+				"cost" : ["10", "coins_gold"],
+				"armour_class" : "11",
+				"wieght" : "10"
+			},
+			"armour_studded_leather" : {
+				"cost" : ["45", "coins_gold"],
+				"armour_class" : "12",
+				"wieght" : "13"
+			}
+		},
+		
+		"armour_medium" : {
+			"dex_mod" : "partial",
+			"armour_hide" : {
+				"cost" : ["10", "coins_gold"],
+				"armour_class" : "12",
+				"wieght" : "12"
+			},
+			"armour_chain_shirt" : {
+				"cost" : ["50", "coins_gold"],
+				"armour_class" : "13",
+				"wieght" : "20"
+			},
+			"armour_scale_mail" : {
+				"cost" : ["50", "coins_gold"],
+				"armour_class" : "14",
+				"stealth_disadvantage" : "true",
+				"wieght" : "45"
+			},
+			"armour_brestplate" : {
+				"cost" : ["400", "coins_gold"],
+				"armour_class" : "14",
+				"wieght" : "20"
+			},
+			"armour_half_plate" : {
+				"cost" : ["750", "coins_gold"],
+				"armour_class" : "15",
+				"stealth_disadvantage" : "true",
+				"wieght" : "40"
+			}
+		},
+		"armour_heavy" : {
+			"dex_mod" : "none",
+			"armour_ring_mail" : {
+				"cost" : ["30", "coins_gold"],
+				"armour_class" : "14",
+				"stealth_disadvantage" : "true",
+				"wieght" : "40"
+			},
+			"armour_chain_mail" : {
+				"cost" : ["75", "coins_gold"],
+				"armour_class" : "16",
+				"strength_requirement" : "13",
+				"stealth_disadvantage" : "true",
+				"wieght" : "55"
+			},
+			"armour_splint" : {
+				"cost" : ["200", "coins_gold"],
+				"armour_class" : "17",
+				"strength_requirement" : "15",
+				"stealth_disadvantage" : "true",
+				"wieght" : "60"
+			},
+			"armour_plate" : {
+				"cost" : ["1500", "coins_gold"],
+				"armour_class" : "18",
+				"strength_requirement" : "15",
+				"stealth_disadvantage" : "true",
+				"wieght" : "65"
+			}
+		},
+		"shield" : {
+			"cost" : ["10", "coins_gold"],
+			"armour_class_mod" : "2",
+			"wieght" : "6"
+		}
+		
+		
+	}
+}
