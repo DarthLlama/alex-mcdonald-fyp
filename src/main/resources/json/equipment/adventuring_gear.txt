@@ -54,7 +54,7 @@
 			"wand" : {
 				"weight" : "1",
 				"cost" : ["10", "coins_gold"]
-			},
+			}
 		},
 		"backpack" : {
 			"weight" : "5",
@@ -198,7 +198,7 @@
 			"weight" : "3",
 			"cost" : ["5", "coins_gold"]
 		},
-		"holy_symbol" {
+		"holy_symbol" : {
 			"amulet" : {
 				"weight" : "1",
 				"cost" : ["5", "coins_gold"]
