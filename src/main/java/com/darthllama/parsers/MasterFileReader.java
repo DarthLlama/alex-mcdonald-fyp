@@ -2,6 +2,7 @@ package com.darthllama.parsers;
 
 import com.darthllama.Application;
 import org.apache.log4j.Logger;
+import org.apache.tomcat.jni.User;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -27,9 +28,11 @@ public class MasterFileReader {
         //File path
         //TODO: Provide a way for the user to set up this value
         //i.e. C:\Users\Alex\SpringbootMVC\alex-mcdonald-fyp\src\resources\json
-        //TODO: This is very bad practise. Create something better. Look it up.
-        String filePath = Application.props.getProperty("filePath") +
+        //TODO: This is very bad practise to grab from the properties like this. Create something better. Look it up.
+        String filePath = System.getProperty("user.home") +
                 Application.props.getProperty("resourceFolderPath");
+
+        logger.info("The Users file directory will be; " + filePath);
 
         //each of these files contains a list of files that have a corresponding JSON file
         String background_list_file = "\\resources\\json\\backgrounds\\00background_list.txt";

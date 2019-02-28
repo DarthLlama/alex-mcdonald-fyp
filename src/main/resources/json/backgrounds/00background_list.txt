@@ -1,7 +1,7 @@
 //List of classes
 acolyte
 criminal
-folk_hero
+folkhero
 noble
 sage
 soldier

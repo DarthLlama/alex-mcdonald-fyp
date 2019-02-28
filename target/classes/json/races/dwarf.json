@@ -1,53 +1,33 @@
 {
-"dwarf" : {
-		"size" : "medium",
-		"speed" : "25",
-		"languages" : [
-			"common",
-			"dwarvern"
-		],
-		"darkvision" : "true",
-		"features" : [
-			"dwarvern_resiliance",
-			"stonecunning"
-		],
-		"profiencyWeapons" : [ 
-			"battleaxe",
-			"handaxe",
-			"throwing_hammer",
-			"warhammer"
-		],
-		"profiencyTools" : [ 
-			"smiths",
-			"brewers",
-			"masons"
-		],
-		"hillDwarf" : {
-			"stat_increases" : [
-				"0",
-				"0",
-				"2",
-				"0",
-				"1",
-				"0"
-			],
-			"features" : [
-				"dwarvern_toughness"
-			]
-		},
-		"mountainDwarf" : {
-			"stat_increases" : [
-				"2",
-				"0",
-				"2",
-				"0",
-				"0",
-				"0"
-			],
-			"profiencyArmours" : {
-				"light",
-				"medium"
-			}
-		}
-	}
+    "playerRaceName" : "dwarf",
+    "size" : "medium",
+    "speed" : "25",
+    "languages" : [
+        "common",
+        "dwarvern"
+    ],
+    "stat_increases" : [
+            "0",
+            "0",
+            "2",
+            "0",
+            "1",
+            "0"
+        ],
+    "darkvision" : "true",
+    "features" : [
+        "dwarvern_resiliance",
+        "stonecunning"
+    ],
+    "profiencyWeapons" : [ 
+        "battleaxe",
+        "handaxe",
+        "throwing_hammer",
+        "warhammer"
+    ],
+    "profiencyTools" : [ 
+        "smiths",
+        "brewers",
+        "masons"
+    ]
 }

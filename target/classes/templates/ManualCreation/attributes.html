@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<header th:insert="index.html :: headerfiles"> </header>
+<body   >
+    <header th:insert="index.html :: navbar"> </header>
+    
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">D&amp;D Character Management Tool</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.png" alt="Unsplashed background img 1" style="opacity: 100;"></div>
+  </div>
+    
+    <!-- template page-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center header">
+                <h1>Select your attributes!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum, lacus in tempor mattis, massa urna euismod purus, quis dictum urna sapien sed dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum elit purus, vel molestie risus luctus molestie. Curabitur feugiat dui erat. Phasellus at velit iaculis, ullamcorper justo eget, aliquet justo. Pellentesque eget ante vitae leo sagittis aliquet eu et risus. Donec tincidunt purus odio, in porttitor velit viverra ac. Praesent auctor dignissim massa, nec maximus lacus varius et. Fusce rhoncus magna non quam viverra porta. Nulla ac purus a lacus tristique varius eu condimentum sem. Sed semper turpis ut lectus consectetur dignissim.</p>
+            </div>
+        </div>
+        <!-- Show how far along the questions are -->
+        <div class="row">
+            <div class="col s12 center">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="/manual-1-race">1</a></li>
+                    <li class="waves-effect"><a href="/manual-2-background">2</a></li>
+                    <li class="waves-effect"><a href="/manual-3-class">3</a></li>
+                    <li class="active"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="/manual-5-further-info">5</a></li>
+                    <li class="waves-effect"><a href="/manual-5-further-info"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- The questions themsevles -->
+        <form action="#">
+            <div class="row">
+                <div class="col s6">
+                    <h3>Standard Array</h3>
+                    <p>The standard array is a specific set of scores, which in D&amp;D 5th edition is [15, 14, 13, 12, 10, 8].</p>
+                    <!-- boxes with numbers here, allow the player to choose where to put them?-->
+                    <table class="responsive-table center-align">
+                        <thead>
+                            <tr>
+                                <th>Strength</th>
+                                <th>Dexerity</th>
+                                <th>Constitution</th>
+                                <th>Intelligence</th>
+                                <th>Wisdom</th>
+                                <th>Charisma</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15</td>
+                                <td>14</td>
+                                <td>13</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="col s6">
+                    <div class="center-align"><a href="#" id="attribute-select" class="btn-large waves-effect waves-light red lighten-1">Select</a></div>
+                </div>
+                </div>
+                <div class="col s6">
+                    <h3>Randomise Stats</h3>
+                    <p>This is where the question goes. Why does it go here? Who knows? Do you know?</p>
+                    <!-- boxes with numbers here, followed by a button that does the randomising? -->
+                    <table class="responsive-table center-align">
+                        <thead>
+                            <tr>
+                                <th>Strength</th>
+                                <th>Dexerity</th>
+                                <th>Constitution</th>
+                                <th>Intelligence</th>
+                                <th>Wisdom</th>
+                                <th>Charisma</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>13</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="center-align col s6"><a href="#" id="randomise-attributes" class="btn-large waves-effect waves-light red lighten-1">Randomise</a></div>
+                        <div class="center-align col s6"><a href="#" id="randomise-attributes" class="btn-large waves-effect waves-light red lighten-1">Select</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-align"><a href="/manual-5-further-info" id="select-race" class="btn-large waves-effect waves-light red lighten-1">Next</a></div>
+            </div>
+        </form>
+    </div>
+    
+<nav th:replace="index.html :: footer"></nav>
+</body>
+</html>s

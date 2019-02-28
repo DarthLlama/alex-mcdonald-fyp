@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<header th:insert="index.html :: headerfiles"> </header>
+<body   >
+    <header th:insert="index.html :: navbar"> </header>
+    
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">D&amp;D Character Management Tool</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.png" alt="Unsplashed background img 1" style="opacity: 100;"></div>
+  </div>
+    
+    <!-- template page-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center header">
+                <h1>Character sheet!</h1>
+            </div>
+        </div>
+        
+        <!-- The questions themsevles -->
+        <form action="#">
+            <div class="row">
+                <div class="col s6">
+                    <p>This is where the question goes. Why does it go here? Who knows? Do you know?</p>
+                </div>
+                <div class="col s6">
+
+                <p>
+                  <label>
+                    <input name="question1" class="with-gap" type="radio" checked />
+                    <span>Yes</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="question1"class="with-gap" type="radio" />
+                    <span>No</span>
+                  </label>
+                </p>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+<nav th:replace="index.html :: footer"></nav>
+</body>
+</html>s

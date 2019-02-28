@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<header th:insert="index.html :: headerfiles"> </header>
+<body   >
+    <header th:insert="index.html :: navbar"> </header>
+    
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">D&amp;D Character Management Tool</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.png" alt="Unsplashed background img 1" style="opacity: 100;"></div>
+  </div>
+    
+    <!-- template page-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center header">
+                <h1>Finalise your Character!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum, lacus in tempor mattis, massa urna euismod purus, quis dictum urna sapien sed dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum elit purus, vel molestie risus luctus molestie. Curabitur feugiat dui erat. Phasellus at velit iaculis, ullamcorper justo eget, aliquet justo. Pellentesque eget ante vitae leo sagittis aliquet eu et risus. Donec tincidunt purus odio, in porttitor velit viverra ac. Praesent auctor dignissim massa, nec maximus lacus varius et. Fusce rhoncus magna non quam viverra porta. Nulla ac purus a lacus tristique varius eu condimentum sem. Sed semper turpis ut lectus consectetur dignissim.</p>
+            </div>
+        </div>
+        <!-- Show how far along the questions are -->
+        <div class="row">
+            <div class="col s12 center">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="/manual-1-race">1</a></li>
+                    <li class="waves-effect"><a href="/manual-2-background">2</a></li>
+                    <li class="waves-effect"><a href="/manual-3-class">3</a></li>
+                    <li class="waves-effect"><a href="/manual-4-attributes">4</a></li>
+                    <li class="active"><a href="!#">5</a></li>
+                    <li class="waves-effect"><a href="/character-sheets"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- The questions themsevles -->
+        <form action="#" class="col s12 ">
+            <div class="row">
+                <div class="col s6"> 
+                    <div class="row">
+                        <div class="input-field col s10">
+                          <input id="characterName" type="text" placeholder="Character Name">
+                          <label class="active" for="characterName">Your Character's name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s10">
+                          <textarea id="characterDescTextArea" placeholder="Here you can add a description to make your character truly unique!" class="materialize-textarea"></textarea>
+                          <label class="active" for="characterDescTextArea">Character Description</label>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col s6"> 
+                    <!-- Previuus selections -->
+                    <div class="row">
+                        <!-- Race -->
+                        <div class="col s4">
+                            <p><strong>Race</strong></p>
+                            <p><strong>Background</strong></p>
+                            <p><strong>Class</strong></p>
+                        </div>
+                        <div class="col s8">
+                            <p>Race Name</p>
+                            <p>Background Name</p>
+                            <p>Class Name</p>
+                        </div>
+                    </div>
+                    <!-- Attributes-->
+                    <div class="row">
+                        <table class="responsive-table center-align">
+                        <thead>
+                            <tr>
+                                <th>Strength</th>
+                                <th>Dexerity</th>
+                                <th>Constitution</th>
+                                <th>Intelligence</th>
+                                <th>Wisdom</th>
+                                <th>Charisma</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15</td>
+                                <td>14</td>
+                                <td>13</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row center-align">
+                <button class="btn red btn-large waves-effect waves-light" href="/character-sheets  " name="action">See character sheets!
+                    <i class="material-icons right">arrow_forward</i>
+                  </button>
+            </div>
+    </div>
+    
+<nav th:replace="index.html :: footer"></nav>
+</body>
+</html>s

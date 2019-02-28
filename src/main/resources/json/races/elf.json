@@ -1,52 +1,23 @@
 {
-"elf" : {
-		"size" : "medium",
-		"speed" : "30",
-		"darkvision" : "true",
-		"features" : [
-			"keen_senses",
-			"fey_ancestry",
-			"trance"
-		],
-		"languages" : [
-			"common",
-			"elvish"
-		],
-		"high_elf" : {
-			"stat_increases" : [
-				"0",
-				"2",
-				"0",
-				"1",
-				"0",
-				"0"
-			],
-			"profiencyWeapons" : {
-				"longsword",
-				"shortsword",
-				"shortbow",
-				"longbow"
-			},
-			"features" : [ "cantrip" ],
-			"languages" : [ "+1" ]
-		},
-		
-		"wood_elf" : {
-			"stat_increases" : [
-				"0",
-				"2",
-				"0",
-				"0",
-				"1",
-				"0"
-			],
-			"profiencyWeapons" : {
-				"longsword",
-				"shortsword",
-				"shortbow",
-				"longbow"
-			},
-			"features" : [ "fleet_of_foot", "mask_of_the_wild" ]
-		}
-	}
+    "playerRaceName" : "elf",
+    "size" : "medium",
+    "speed" : "30",
+    "darkvision" : "true",
+    "features" : [
+        "keen_senses",
+        "fey_ancestry",
+        "trance"
+    ],
+    "languages" : [
+        "common",
+        "elvish"
+    ],
+    "stat_increases" : [
+            "0",
+            "2",
+            "0",
+            "1",
+            "0",
+            "0"
+    ]
 }

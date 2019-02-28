@@ -37,17 +37,17 @@ public class WriteJSONFiles {
         logger.info("Resources not found. Creating...");
 
         //Makes the folders
-        File dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\json\\backgrounds");
+        File dir = new File(filePath + "\\resources\\json\\backgrounds");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\json\\classes");
+            dir = new File(filePath + "\\resources\\json\\classes");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\json\\equipment");
+            dir = new File(filePath + "\\resources\\json\\equipment");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\json\\features");
+            dir = new File(filePath + "\\resources\\json\\features");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\json\\races");
+            dir = new File(filePath + "\\resources\\json\\races");
         dir.mkdirs();
-            dir = new File(filePath + "\\alex-mcdonald-fyp\\resources\\json\\spells");
+            dir = new File(filePath + "\\resources\\json\\spells");
         dir.mkdirs();
         //config.application
             dir = new File(filePath + "\\alex-mcdonald-fyp");
@@ -55,12 +55,12 @@ public class WriteJSONFiles {
 
         //TODO: I really have to finish creating the JSON files to be able to finish testing this
         logger.info("Copying the Class files from the resources into the user directory; starting with 00class_list");
-        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\backgrounds\\00background_list.txt", getFile("json/backgrounds/00background_list.txt"));
-        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\classes\\00class_list.txt", getFile("json/classes/00class_list.txt"));
-        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\equipment\\00equipment_list.txt", getFile("json/equipment/00equipment_list.txt"));
-        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\features\\00features_list.txt",getFile("json/features/00features_list.txt"));
-        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\races\\00race_list.txt",getFile("json/races/00race_list.txt"));
-        writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\spells\\00spells_list.txt",getFile("json/spells/00spells_list.txt"));
+        writeFile(filePath + "\\resources\\json\\backgrounds\\00background_list.txt", getFile("json/backgrounds/00background_list.txt"));
+        writeFile(filePath + "\\resources\\json\\classes\\00class_list.txt", getFile("json/classes/00class_list.txt"));
+        writeFile(filePath + "\\resources\\json\\equipment\\00equipment_list.txt", getFile("json/equipment/00equipment_list.txt"));
+        writeFile(filePath + "\\resources\\json\\features\\00features_list.txt",getFile("json/features/00features_list.txt"));
+        writeFile(filePath + "\\resources\\json\\races\\00race_list.txt",getFile("json/races/00race_list.txt"));
+        writeFile(filePath + "\\resources\\json\\spells\\00spells_list.txt",getFile("json/spells/00spells_list.txt"));
         //writeFile(filePath + "\\alex-mcdonald-fyp\\config.properties",getFile("config.properties"));
 
 
@@ -68,7 +68,7 @@ public class WriteJSONFiles {
         //TODO: Is there a way to optimise this?
         //Backgrounds
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\json\\backgrounds\\00background_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\resources\\json\\backgrounds\\00background_list.txt"))) {
             //stream.forEach(System.out::println);
             backgroundList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -86,13 +86,13 @@ public class WriteJSONFiles {
         int tempCount = 0;
         while (tempCount < backgroundList.size()) {
             logger.info("Going through the background list: " + backgroundList.get(tempCount) + ".json");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\backgrounds\\" + backgroundList.get(tempCount) + ".json", getFile("json/backgrounds/" + backgroundList.get(tempCount) + ".json"));
+            writeFile(filePath + "\\resources\\json\\backgrounds\\" + backgroundList.get(tempCount) + ".json", getFile("json/backgrounds/" + backgroundList.get(tempCount) + ".json"));
             tempCount++;
         }
 
         //Classes
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\json\\classes\\00class_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\resources\\json\\classes\\00class_list.txt"))) {
             //stream.forEach(System.out::println);
             classList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -110,15 +110,15 @@ public class WriteJSONFiles {
         tempCount = 0;
         while (tempCount < classList.size()) {
             logger.info("Going through the class list: " + classList.get(tempCount) + ".json");
-            //getFile("C:\\Users\\Alex\\Documents\\Programming\\Projects\\alex-mcdonald-fyp\\src\\main\\resources\\json\\classes\\" + classList.get(tempCount) + ".txt");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\classes\\" + classList.get(tempCount) + ".json", getFile("json/classes/" + classList.get(tempCount) + ".json"));
-            //writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\classes\\00class_list.txt", getFile("json/classes/00class_list.txt"));
+            //getFile("C:\\Users\\Alex\\Documents\\Programming\\Projects\\src\\main\\resources\\json\\classes\\" + classList.get(tempCount) + ".txt");
+            writeFile(filePath + "\\resources\\json\\classes\\" + classList.get(tempCount) + ".json", getFile("json/classes/" + classList.get(tempCount) + ".json"));
+            //writeFile(filePath + "\\resources\\json\\classes\\00class_list.txt", getFile("json/classes/00class_list.txt"));
             tempCount++;
         }
 
         //Equipment
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\json\\equipment\\00equipment_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\resources\\json\\equipment\\00equipment_list.txt"))) {
             //stream.forEach(System.out::println);
             equipmentList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -136,13 +136,12 @@ public class WriteJSONFiles {
         tempCount = 0;
         while (tempCount < equipmentList.size()) {
             logger.info("Going through the equipment list: " + equipmentList.get(tempCount) + ".json");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\equipment\\" + equipmentList.get(tempCount) + ".json", getFile("json/equipment/" + equipmentList.get(tempCount) + ".json"));
+            writeFile(filePath + "\\resources\\json\\equipment\\" + equipmentList.get(tempCount) + ".json", getFile("json/equipment/" + equipmentList.get(tempCount) + ".json"));
             tempCount++;
         }
-        /*TODO: Writing to the drive Features JSON
         //Features
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\json\\features\\00features_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\resources\\json\\features\\00features_list.txt"))) {
             //stream.forEach(System.out::println);
             featureList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -160,14 +159,13 @@ public class WriteJSONFiles {
         tempCount = 0;
         while (tempCount < featureList.size()) {
             logger.info("Going through the features list: " + featureList.get(tempCount) + ".json");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\features\\" + featureList.get(tempCount) + ".json", getFile("json/features/" + featureList.get(tempCount) + ".json"));
+            writeFile(filePath + "\\resources\\json\\features\\" + featureList.get(tempCount) + ".json", getFile("json/features/" + featureList.get(tempCount) + ".json"));
             tempCount++;
         }
-        */
 
         //Races
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\json\\races\\00race_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\resources\\json\\races\\00race_list.txt"))) {
             //stream.forEach(System.out::println);
             raceList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -185,15 +183,14 @@ public class WriteJSONFiles {
         tempCount = 0;
         while (tempCount < raceList.size()) {
             logger.info("Going through the race list: " + raceList.get(tempCount) + ".json");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\races\\" + raceList.get(tempCount) + ".json", getFile("json/races/" + raceList.get(tempCount) + ".json"));
+            writeFile(filePath + "\\resources\\json\\races\\" + raceList.get(tempCount) + ".json", getFile("json/races/" + raceList.get(tempCount) + ".json"));
             tempCount++;
         }
 
         //TODO: Write Spells JSON to the users drive
-        /*
         //Equipment
         //read file into stream, try-with-resources
-        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\alex-mcdonald-fyp\\resources\\json\\spells\\00spell_list.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get(filePath + "\\resources\\json\\spells\\00spells_list.txt"))) {
             //stream.forEach(System.out::println);
             spellsList = stream
                     .filter(line -> !line.startsWith("//")) //allows comments
@@ -211,9 +208,9 @@ public class WriteJSONFiles {
         tempCount = 0;
         while (tempCount < spellsList.size()) {
             logger.info("Going through the spell list: " + spellsList.get(tempCount) + ".json");
-            writeFile(filePath + "\\alex-mcdonald-fyp\\resources\\json\\spells\\" + spellsList.get(tempCount) + ".json", getFile("json/spells/" + spellsList.get(tempCount) + ".json"));
+            writeFile(filePath + "\\resources\\json\\spells\\" + spellsList.get(tempCount) + ".json", getFile("json/spells/" + spellsList.get(tempCount) + ".json"));
             tempCount++;
-        }*/
+        }
     }
 
     private String getFile(String fileName){

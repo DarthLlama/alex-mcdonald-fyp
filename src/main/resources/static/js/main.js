@@ -1,0 +1,3 @@
+function myFunction() {
+  $(".divIDClass").hide();
+}

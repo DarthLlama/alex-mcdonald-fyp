@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<header th:insert="index.html :: headerfiles"> </header>
+<body   >
+    <header th:insert="index.html :: navbar"> </header>
+    <!-- template page-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center header">
+                <h1>Template page</h1>
+            </div>
+        </div>
+        <!-- Show how far along the questions are -->
+        <div class="row">
+            <div class="col s12 center">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!">6</a></li>
+                    <li class="waves-effect"><a href="#!">7</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- The questions themsevles -->
+        <form action="#">
+            <div class="row">
+                <div class="col s6">
+                    <p>This is where the question goes. Why does it go here? Who knows? Do you know?</p>
+                </div>
+                <div class="col s6">
+
+                <p>
+                  <label>
+                    <input name="question1" class="with-gap" type="radio" checked />
+                    <span>Yes</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="question1"class="with-gap" type="radio" />
+                    <span>No</span>
+                  </label>
+                </p>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+<nav th:replace="index.html :: footer"></nav>
+</body>
+</html>

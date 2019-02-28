@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<header th:insert="index.html :: headerfiles"> </header>
+<body   >
+    <header th:insert="index.html :: navbar"> </header>
+    <!-- template page-->
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">D&amp;D Character Management Tool</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.png" alt="Unsplashed background img 1" style="opacity: 100;"></div>
+  </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center header">
+                <h1>Character List</h1>
+            </div>
+        </div>
+        
+        <!-- The questions themsevles -->
+        <div class="row">
+            <ul class="collapsible" th:each="playerCharacter : ${playerCharacters}">
+                <li>
+                  <div class="collapsible-header">
+                      <h3><span  th:text=${playerCharacter.playerName}>Character Name</span>, <span th:text=${playerCharacter.playerRace.playerRaceName}>Race Name</span> <span th:text=${playerCharacter.playerClass.class_name}>Class Name</span></h3>
+                    </div>
+                  <div class="collapsible-body">
+                      <div class="row">
+                        <!-- Attributes-->
+                          <table>
+                              <thead>
+                                <tr>
+                                    <th><a class="red-text tooltipped" data-position="top" data-tooltip="How phsycally strong a character is; how much they can lift, or how hard they can punch someone">Strength</a></th>
+                                    <th><a class="red-text tooltipped" data-position="top" data-tooltip="How agile a character is; doing acrobatics, or picking a lock">Dexerity</a></th>
+                                    <th><a class="red-text tooltipped" data-position="top" data-tooltip="How hardy a character is; how well can you resist a poison, or how much health do you have">Constitution</a></th>
+                                    <th><a class="red-text tooltipped" data-position="top" data-tooltip="How smart a character is; remembering a particular fact about a place, or knowing a piece of history">Intelligence</a></th>
+                                    <th><a class="red-text tooltipped" data-position="top" data-tooltip="How wise a character is; how well you utilise common sense, knowing if someone is lying to you or noticing something out place">Wisdom</a></th>
+                                    <th><a class="red-text tooltipped" data-position="top" data-tooltip="How charming a character is; convincing someone to let you past, or lying to someone about something important">Charisma</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td th:each="attribute : ${playerCharacter.attributeScores}"><p th:text="${attribute}">3</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Athletics</p>
+                                    </td>
+                                    <td>
+                                        <p>Acrobatics</p>
+                                        <p>Sleight of Hand</p>
+                                        <p>Stealth</p>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        <p>Arcana</p>
+                                        <p>History</p>
+                                        <p>Investigation</p>
+                                        <p>Nature</p>
+                                        <p>Religion</p>
+                                    </td>
+                                    <td>
+                                        <p>Animal Handling</p>
+                                        <p>Insight</p>
+                                        <p>Medicine</p>
+                                        <p>Perception</p>
+                                        <p>Survival</p>
+                                    </td>
+                                    <td>
+                                        <p>Deception</p>
+                                        <p>Intimidation</p>
+                                        <p>Performance</p>
+                                        <p>Persuation</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                      <div class="row">
+                      
+                          <div class="col s6 push-s3">
+                            <table>
+                                <thead>
+                                    <th>Armour Class</th>
+                                    <th>Initiative</th>
+                                    <th>Speed</th>
+                                </thead>
+                                <tbody>
+                                    <td>16</td>
+                                    <td>+1</td>
+                                    <td>30</td>
+                                </tbody>
+                            </table>
+                            <table>
+                                <thead>
+                                    <th>Health</th>
+                                    <th>Hit Die</th>
+                                    <th>Death Saves</th>
+                                </thead>  
+                                <tbody>
+                                    <td>10</td>
+                                    <td><p th:value="${playerCharacter.playerClass.hitDie}">d10</p></td>
+                                    <td>
+                                        <div class="row">
+                                            <input type="checkbox">
+                                            <input type="checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="row">
+                                            <input type="checkbox">
+                                            <input type="checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                </tbody>
+                            </table>
+
+                          </div>
+                    </div>
+                      <div class="row">
+                        <div class="col s6">
+                            <div class="row"><h4>Attacks and Spell Casting</h4></div>
+                            <div class="row">
+                                <p><Strong>Sword</Strong>, +4 to hit, d6 slashing damage</p>
+                            </div>
+                            <div class="row">
+                                <h4>Equipment</h4>
+                                <p><Strong>A Sword</Strong></p>
+                            </div>
+                          </div>
+                          <div class="col s6">
+                              <h4>Features</h4>
+                                <strong>Spell Casting</strong>;
+                                <p>This character can cast spells.</p>
+                              <strong>Martial Training</strong>;
+                                <p>This character can use swords.</p>
+                              <strong>Complex Feature Example</strong>;
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis urna id ex eleifend pulvinar. Cras euismod accumsan mi, non tincidunt nisl vehicula et. Aenean sodales condimentum ex nec placerat. Duis eget enim metus. Nulla facilisi. Nullam aliquet augue non eros laoreet dignissim. Maecenas quis commodo odio, at convallis enim.</p>
+                          </div>
+                      
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+        
+        </div>
+    </div>
+    
+<nav th:replace="index.html :: footer"></nav>
+</body>
+</html>

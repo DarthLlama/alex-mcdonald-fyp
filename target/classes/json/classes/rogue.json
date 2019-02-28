@@ -1,128 +1,19 @@
 {
-	"rogue" : {
-		"hitDie" : "8",
-		"proficiencies_armours" : [ "light" ],
-		"proficiencies_weapons" : [ "simple", "hand_crossbow", "longsword", "rapier", "shortsword" ],
-		"proficiencies_tools" : [ "tools_thieves" ],
-		"saving_throws" : [ "1", "3" ],
-		"skill_choice" : [ "acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "slight_of_hand", "stealth" ],
-		
-		"equipment_choices" : {
-			"1" : ["weapon_rapier", "weapon_shortsword"],
-			"2" : ["weapon_shortbow+arrow#20", "weapon_shortsword"],
-			"3" : ["pack_burglar", "pack_dungeoneer", "pack_explorer"]
-		},
-		
-		"equipment" : ["armour_leather", "daggerx2", "tools_thieves"],
-		
-		"archetypes" : [ "thief" ],
+	"class_name" : "rogue",
+	"hitDie" : "8",
+	"proficiencies_armours" : [ "light" ],
+	"proficiencies_weapons" : [ "simple", "hand_crossbow", "longsword", "rapier", "shortsword" ],
+	"proficiencies_tools" : [ "tools_thieves" ],
+	"saving_throws" : [ "1", "3" ],
+	"skill_choice" : [ "acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "slight_of_hand", "stealth" ],
 	
-		"1" : {
-			"proficienciesMod" : "2",
-			"features" : [ "expertise", "sneak_attack", "thieves_cant" ]
-		},
-		
-		"2" : {
-			"proficienciesMod" : "2",
-			"features" : ["cunning_action"]
-		},
-		
-		"3" : {
-			"proficienciesMod" : "2",
-			"thief" : {
-				"features" : ["fast_hands", "second_story_work"]
-			}
-		},
-		
-		"4" : {
-			"proficienciesMod" : "2",
-			"features" : ["ability_score_improvement"]
-		},
-		
-		"5" : {
-			"proficienciesMod" : "3",
-			"features" : ["uncanny_dodge"]
-		},
-		
-		"6" : {
-			"proficienciesMod" : "3",
-			"features" : ["expertise"]
-		},
-		
-		"7" : {
-			"proficienciesMod" : "3",
-			"features" : ["evasion"]
-		},
-		
-		"8" : {
-			"proficienciesMod" : "3",
-			"features" : ["ability_score_improvement"]
-		},
-		
-		"9" : {
-			"proficienciesMod" : "4",
-			"thief" : {
-				"features" : ["supreme_sneak"]
-			}
-		},
-		
-		"10" : {
-			"proficienciesMod" : "4",
-			"features" : ["ability_score_improvement"]
-		},
-		
-		"11" : {
-			"proficienciesMod" : "4",
-			"features" : ["reliable_talent"]
-		},
-		
-		"12" : {
-			"proficienciesMod" : "4",
-			"features" : ["ability_score_improvement"]
-		},
-		
-		"13" : {
-			"proficienciesMod" : "5",
-			"thief" : {
-				"features" : ["use_magic_device"]
-			}
-		},
-		
-		"14" : {
-			"proficienciesMod" : "5",
-			"features" : ["blindsense"]
-		},
-		
-		"15" : {
-			"proficienciesMod" : "5",
-			"features" : ["slippery_mind"]
-		},
-		
-		"16" : {
-			"proficienciesMod" : "5",
-			"features" : ["ability_score_improvement"]
-		},
-		
-		"17" : {
-			"proficienciesMod" : "6",
-			"thief" : {
-				"features" : ["thiefs_reflexes"]
-			}
-		},
-		
-		"18" : {
-			"proficienciesMod" : "6",
-			"features" : ["elusive"]
-		},
-		
-		"19" : {
-			"proficienciesMod" : "6",
-			"features" : ["ability_score_improvement"]
-		},
-		
-		"20" : {
-			"proficienciesMod" : "6",
-			"features" : ["stroke_of_luck"]
-		}
-	}
+	"equipment_choices" : {
+		"equipment_choice1" : ["weapon_rapier", "weapon_shortsword"],
+		"equipment_choice2" : ["weapon_shortbow+arrow#20", "weapon_shortsword"],
+		"equipment_choice3" : ["pack_burglar", "pack_dungeoneer", "pack_explorer"]
+	},
+	
+	"equipment" : ["armour_leather", "daggerx2", "tools_thieves"],
+	
+	"archetypes" : [ "thief" ]
 }

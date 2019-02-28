@@ -1,129 +1,17 @@
 {
-	"fighter" : {
-		"hitDie" : "10",
-		"proficiencies_armours" : [ "light", "medium", "heavy", "shields" ],
-		"proficiencies_weapons" : [ "simple", "martial" ],
-		
-		"savingThrows" : [ "0", "2" ],
-		"skill_choice" : [ "acrobatics", "animal_handling", "athletics", "history", "insight", "intimidation", "perception", "survival" ],
-		
-		"equipment_choices" : {
-			"1" : ["armour_chain_mail", "armour_leather+longbow+arrow#20"],
-			"2" : ["weapon_martial+shield", "weapon_martial#2"],
-			"3" : ["weapon_crossbow_light+bolt#20", "weapon_handaxe#2"],
-			"4" : ["pack_dungeoneer", "pack_explorer"]
-		},
-		
-		"archetypes" : [ "champion" ],
-		
-		"1" : {
-			"proficienciesMod" : "2",
-			"features" : [ "fighting_style", "second_wind" ]
-		},
-		
-		"2" : {
-			"proficienciesMod" : "2",
-			"features" : [ "action_surge" ]
-		},
-		
-		"3" : {
-			"proficienciesMod" : "2",
-			"champion" : {
-				"features" : [ "improved_critical" ]
-			}
-		},
-		
-		"4" : {
-			"proficienciesMod" : "2",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"5" : {
-			"proficienciesMod" : "3",
-			"features" : [ "extra_attack" ]
-		},
-		
-		"6" : {
-			"proficienciesMod" : "3",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"7" : {
-			"proficienciesMod" : "3",
-			"champion" : {
-				"features" : [ "remarkable_athlete" ]
-			}
-		},
-		
-		"8" : {
-			"proficienciesMod" : "3",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"9" : {
-			"proficienciesMod" : "4",
-			"features" : [ "indomitable" ]
-		},
-		
-		"10" : {
-			"proficienciesMod" : "4",
-			"champion" : {
-				"features" : [ "additional_fighting_style" ]
-			}
-		},
-		
-		"11" : {
-			"proficienciesMod" : "4",
-			"features" : [ "extra_attack" ]
-		},
-		
-		"12" : {
-			"proficienciesMod" : "4",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"13" : {
-			"proficienciesMod" : "5"
-		},
-		
-		"14" : {
-			"proficienciesMod" : "5",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"15" : {
-			"proficienciesMod" : "5",
-			"champion" : {
-				"features" : [ "superior_critical" ]
-			}
-		},
-		
-		"16" : {
-			"proficienciesMod" : "5",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"17" : {
-			"proficienciesMod" : "6"
-		},
-		
-		"18" : {
-			"proficienciesMod" : "6",
-			"champion" : {
-				"features" : [ "survivor" ]
-			}
-		},
-		
-		"19" : {
-			"proficienciesMod" : "6",
-			"features" : [ "ability_score_improvement" ]
-		},
-		
-		"20" : {
-			"proficienciesMod" : "6",
-			"features" : [ "extra_attack" ]
-		}
-		
-	}
-
+	"class_name" :"fighter",
+	"hitDie" : "10",
+	"proficiencies_armours" : [ "light", "medium", "heavy", "shields" ],
+	"proficiencies_weapons" : [ "simple", "martial" ],
+	
+	"saving_throws" : [ "0", "2" ],
+	"skill_choice" : [ "acrobatics", "animal_handling", "athletics", "history", "insight", "intimidation", "perception", "survival" ],
+	
+	"equipment_choices" : {
+		"equipment_choice1" : ["armour_chain_mail", "armour_leather+longbow+arrow#20"],
+		"equipment_choice2" : ["weapon_martial+shield", "weapon_martial#2"],
+		"equipment_choice3" : ["weapon_crossbow_light+bolt#20", "weapon_handaxe#2"]
+	},
+	
+	"archetypes" : [ "champion" ]
 }

@@ -1,18 +1,113 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="headerfiles">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dungeons and Dragons Character Manager</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <h1>Alex's Spring Boot Practice</h1>
-    <p>Get your greeting <a href="/greeting">here</a></p>
-    <p><a href="/dice-roller?sides=4">Roll D4</a></p>
-    <p><a href="/dice-roller?sides=6">Roll D6</a></p>
-    <p><a href="/dice-roller?sides=8">Roll D8</a></p>
-    <p><a href="/dice-roller?sides=10">Roll D10</a></p>
-    <p><a href="/dice-roller?sides=12">Roll D12</a></p>
-    <p><a href="/dice-roller?sides=20">Roll D20</a></p>
-    <p><a href="/dice-roller?sides=100">Roll D100</a></p>
+<nav class="white" role="navigation" th:fragment="navbar">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="/" class="brand-logo"><img src="img/dragon_icon.png" class="responsive-img" style="width: 1em;" alt="Cerberus Icon"></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/randomise-character">Random Character</a></li>
+      <li><a href="/manual-character">Manual Character</a></li>
+      <li><a href="/character-sheets">Character List</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center white-text text-lighten-2">D&amp;D Character Management Tool</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="img/background1.png" alt="Unsplashed background img 1" style="opacity: 100;"></div>
+</div>
+
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center red-text"><i class="material-icons">loop</i></h2>
+          <h5 class="center">Randomly Generate a New Character</h5>
+          <p class="light">
+            Select this option if you want to quickly create a character with totally random attributes and modifiers. You will be able to change aspects you don't like later on!
+          </p>
+          <div class="row center">
+            <a href="/randomise-character" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Randomise a Character</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center red-text"><i class="material-icons">child_care</i></h2>
+          <h5 class="center">Manually Create a New Character</h5>
+
+          <p class="light">
+            Select this option if you want total control over your character development. It will be as helpful and as guiding as possible for both new players and old.</p>
+
+          <div class="row center">
+            <a href="/manual-character" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Create a Character</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center red-text"><i class="material-icons">group</i></h2>
+          <h5 class="center">View or Edit Character Sheet</h5>
+
+          <p class="light">Already have a character sheet? Click below to be taken to where you can view and edit your character sheets.</p>
+          <div class="row center">
+            <a href="/character-sheets" id="download-button" class="btn-large waves-effect waves-light red lighten-1">View Characters Sheets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<footer class="page-footer red" th:fragment="footer">
+  <div class="footer-copyright">
+    <div class="container">
+      Dragon Icon made by <a class="white-text text-lighten-3" href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a class="white-text text-lighten-3" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a class="white-text text-lighten-3" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</footer>
+
 </body>
 </html>

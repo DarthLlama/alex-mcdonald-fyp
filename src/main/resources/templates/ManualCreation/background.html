@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<header th:insert="index.html :: headerfiles"> </header>
+<body   >
+    <header th:insert="index.html :: navbar"> </header>
+    
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">D&amp;D Character Management Tool</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.png" alt="Unsplashed background img 1" style="opacity: 100;"></div>
+  </div>
+    
+    <!-- template page-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center header">
+                <h1>Select a background!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum, lacus in tempor mattis, massa urna euismod purus, quis dictum urna sapien sed dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum elit purus, vel molestie risus luctus molestie. Curabitur feugiat dui erat. Phasellus at velit iaculis, ullamcorper justo eget, aliquet justo. Pellentesque eget ante vitae leo sagittis aliquet eu et risus. Donec tincidunt purus odio, in porttitor velit viverra ac. Praesent auctor dignissim massa, nec maximus lacus varius et. Fusce rhoncus magna non quam viverra porta. Nulla ac purus a lacus tristique varius eu condimentum sem. Sed semper turpis ut lectus consectetur dignissim.</p>
+            </div>
+        </div>
+        <!-- Show how far along the questions are -->
+        <div class="row">
+            <div class="col s12 center">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="/manual-1-race">1</a></li>
+                    <li class="active"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="/manual-3-class">3</a></li>
+                    <li class="waves-effect"><a href="/manual-4-attributes">4</a></li>
+                    <li class="waves-effect"><a href="/manual-5-further-info">5</a></li>
+                    <li class="waves-effect"><a href="/manual-3-class"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Collapsable test-->
+
+        <div>
+            <div>
+                <ul class="collapsible" th:each="background : ${backgrounds}">
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s12">
+                            <h3><span th:text=${background.background_name}>Background Name</span></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum, lacus in tempor mattis, massa urna euismod purus, quis dictum urna sapien sed dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum elit purus, vel molestie risus luctus molestie. Curabitur feugiat dui erat. Phasellus at velit iaculis, ullamcorper justo eget, aliquet justo. Pellentesque eget ante vitae leo sagittis aliquet eu et risus. Donec tincidunt purus odio, in porttitor velit viverra ac. Praesent auctor dignissim massa, nec maximus lacus varius et. Fusce rhoncus magna non quam viverra porta. Nulla ac purus a lacus tristique varius eu condimentum sem. Sed semper turpis ut lectus consectetur dignissim.</p>
+                            </div>    
+                        </div>
+                        <div class="collapsible-body">
+                            <table class="col s8 center-align responsive-table">
+                               <tr>
+                                    <th>Skill Proficiencies</th>
+                                    <td th:each="proficiencies_skill : ${background.proficiencies_skills}" th:text="${proficiencies_skill}">proficiencies_skill</td>
+                                </tr>
+                                <tr>
+                                    <th>Background Feature</th>
+                                    <td  th:text="${background.background_feature}">BackGround_feature</td>
+                                </tr>
+                            </table>
+
+                            <table class="responsive-table col s8 center-align">
+                                <thead>
+                                    <tr>
+                                        <th>Personality Traits</th>
+                                        <th>Select</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="personalityTrait : ${background.personality_trait_options}">
+                                        <td th:text="${personalityTrait}">0</td>
+                                        <td><div class="center-align"><a href="#" id="add-personality" class="btn-large waves-effect waves-light red lighten-1">Add</a></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        <table class="responsive-table col s8 center-align">
+                            <thead>
+                                <tr>
+                                    <th>Ideals</th>
+                                    <th>Select</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="ideals : ${background.ideal_options}">
+                                    <td th:text="${ideals}">0</td>
+                                    <td><div class="center-align"><a href="#" id="add-personality" class="btn-large waves-effect waves-light red lighten-1">Add</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="responsive-table col s8 center-align">
+                            <thead>
+                                <tr>
+                                    <th>Bonds</th>
+                                    <th>Select</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="bond : ${background.bond_options}">
+                                    <td th:text="${bond}">0</td>
+                                    <td><div class="col s6 center-align"><a href="#" id="add-personality" class="btn-large waves-effect waves-light red lighten-1">Add</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="responsive-table col s8 center-align">
+                            <thead>
+                                <tr>
+                                    <th>Flaws</th>
+                                    <th>Select</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="flaw : ${background.flaw_options}">
+                                    <td th:text="${flaw}">0</td>
+                                    <td><div class="col s6 center-align"><a href="/manual-2-background" th:value="${background}" class="btn-large waves-effect waves-light red lighten-1">Add</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="row">
+                            <div class="center-align">
+                                <a href="/manual-2-background" id="submit-background" class="btn-large waves-effect waves-light red lighten-1">Select this background</a></div>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+            <div class="row center-align">
+                <div class="center-align"><a href="/manual-3-class" id="select-race" class="btn-large waves-effect waves-light red lighten-1">Choose class</a></div>
+            </div>
+        </div>
+        
+        <!-- The questions themsevles -->
+    </div>
+    
+<nav th:replace="index.html :: footer"></nav>
+</body>
+</html>

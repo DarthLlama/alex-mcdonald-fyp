@@ -12,50 +12,46 @@
 			"weight" : "1",
 			"cost" : ["50", "coins_gold"]
 		},
-		"ammunition" : {
-			"arrow#20" : {
+			"ammunition_arrow" : {
 				"weight" : "1",
 				"cost" : ["1", "coins_gold"]
 			},
-			"blowgun_needles#50" : {
+			"ammunition_blowgun_needles" : {
 				"weight" : "1",
 				"cost" : ["1", "coins_gold"]
 			},
-			"crossbow_bolts#20" : {
+			"ammunition_crossbow_bolts" : {
 				"weight" : "1.5",
 				"cost" : ["1", "coins_gold"]
 			},
-			"sling#20" : {
+			"ammunition_sling" : {
 				"weight" : "1.5",
 				"cost" : ["1", "coins_copper"]
-			}
-		},
+			},
 		"antitoxin_vial" : {
 			"weight" : "",
 			"cost" : ["50", "coins_gold"]
 		},
-		"arcane_focus" : {
-			"crystal" : {
+			"arcane_focus_crystal" : {
 				"weight" : "1",
 				"cost" : ["10", "coins_gold"]
 			},
-			"orb" : {
+			"arcane_focus_orb" : {
 				"weight" : "3",
 				"cost" : ["20", "coins_gold"]
 			},
-			"rod" : {
+			"arcane_focus_rod" : {
 				"weight" : "2",
 				"cost" : ["10", "coins_gold"]
 			},
-			"staff" : {
+			"arcane_focus_staff" : {
 				"weight" : "4",
 				"cost" : ["5", "coins_gold"]
 			},
-			"wand" : {
+			"arcane_focus_wand" : {
 				"weight" : "1",
 				"cost" : ["10", "coins_gold"]
-			}
-		},
+			},
 		"backpack" : {
 			"weight" : "5",
 			"cost" : ["2", "coins_gold"]
@@ -156,24 +152,22 @@
 			"weight" : "5",
 			"cost" : ["2", "coins_gold"]
 		},
-		"druidic_focus" : {
-			"sprig_of_mistletoe" : {
+			"druidic_focus_sprig_of_mistletoe" : {
 				"weight" : "",
 				"cost" : ["1", "coins_gold"]
 			},
-			"totem" : {
+			"druidic_focus_totem" : {
 				"weight" : "",
 				"cost" : ["1", "coins_gold"]
 			},
-			"wooden_staff" : {
+			"druidic_focus_wooden_staff" : {
 				"weight" : "4",
 				"cost" : ["5", "coins_gold"]
 			},
-			"yew_wand" : {
+			"druidic_focus_yew_wand" : {
 				"weight" : "1",
 				"cost" : ["10", "coins_gold"]
-			}
-		},
+			},
 		"fishing_tackle" : {
 			"weight" : "4",
 			"cost" : ["1", "coins_gold"]
@@ -198,20 +192,18 @@
 			"weight" : "3",
 			"cost" : ["5", "coins_gold"]
 		},
-		"holy_symbol" : {
-			"amulet" : {
+			"holy_symbol_amulet" : {
 				"weight" : "1",
 				"cost" : ["5", "coins_gold"]
 			},
-			"emblem" : {
+			"holy_symbol_emblem" : {
 				"weight" : "",
 				"cost" : ["5", "coins_gold"]
 			},
-			"reliquary" : {
+			"holy_symbol_reliquary" : {
 				"weight" : "2",
 				"cost" : ["5", "coins_gold"]
-			}
-		},
+			},
 		"holy_water_flask" : {
 			"weight" : "1",
 			"cost" : ["25", "coins_gold"]
@@ -404,11 +396,5 @@
 			"weight" : "1",
 			"cost" : ["1", "coins_copper"]
 		}
-		
-		
-		
-		
-		
-		
 	}
 }
